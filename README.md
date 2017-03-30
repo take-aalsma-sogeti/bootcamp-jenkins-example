@@ -1,14 +1,16 @@
 # Checkout
-- Ga naar “Nieuwe item”. Geef als naam “Checkout” op en kies “Bouw een vrije stijl type software project”.
-- Kies bij “Broncodebeheer (SCM)” voor “Git”. Vul bij Repository URL https://github.com/jeroenschepens/bootcamp-jenkins-example.git in.
-- Klik op opslaan.
+- Go to "New item". Enter “Test” as the item name and choose "Freestyle project"
+- Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Click on "Save".
 # Compile
-- Ga naar “Nieuwe item”. Geef als naam “Compile” op en kies “Bouw een vrije stijl type software project”.
-- Kies bij “Broncodebeheer (SCM)” voor “Git”. Vul bij Repository URL https://github.com/jeroenschepens/bootcamp-jenkins-example.git in.
-- Klik bij “Bouwstappen” op “Voer top-niveau Maven taken uit”. Kies bij “Versie Maven” voor “M3”. Vul bij doelen “clean compile” in.
-- Klik op opslaan.
+- Go to "New item". Enter “Compile” as the item name and choose "Freestyle project"
+- Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Got to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
+- Enter "clean compile" in the "Goals" field.
+- Click on "Save".
 # Test
-- Ga naar “Nieuwe item”. Geef als naam “Test” op en kies “Bouw een vrije stijl type software project”.
-- Kies bij “Broncodebeheer (SCM)” voor “Git”. Vul bij Repository URL https://github.com/jeroenschepens/bootcamp-jenkins-example.git in.
-- Klik bij “Bouwstappen” op “Voer top-niveau Maven taken uit”. Kies bij “Versie Maven” voor “M3”. Vul bij doelen “clean compile” in.
-- Klik op opslaan.
+- Go to "New item". Enter “Test” as the item name and choose "Freestyle project"
+- Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Got to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
+- Enter "clean test" in the "Goals" field.
+- Click on "Save".
