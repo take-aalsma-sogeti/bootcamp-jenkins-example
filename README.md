@@ -73,7 +73,7 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Go to the Jenkins Dashboard (http://localhost:8080/)
 - Go to "New item". Enter “Code Checkout” as the item name and choose "Freestyle project"
 - Go to "Source code management" and select "Git". 
-- Enter https://github.com/<username>/bootcamp-jenkins-example.git in the field "Repository URL".
+- Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
 - Click on "Save".
 
 # willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
