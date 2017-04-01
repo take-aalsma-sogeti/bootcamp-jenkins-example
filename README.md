@@ -23,6 +23,14 @@ For installation instruction including images (Windows) click [here](/docs/Insta
 
 It would be silly to let you do a Jenkins Bootcamp without the software we are going to use mainly... Below are instructions to download Jenkins, additional software and to set up your GitHub Account.
 
+In this Chapter we will discuss the following topics:
+
+- Installation of Jenkins
+- additional Software needed for the bootcamp
+- set up a GitHub account.
+
+Note that we only discuss the windows versions of the software here
+
 ## Jenkins
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 
