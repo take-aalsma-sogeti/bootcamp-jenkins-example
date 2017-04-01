@@ -147,10 +147,11 @@ Now we are going to execute the unit test. Click "Build Now" to start the job.
 
 Take a look at the outcome and the console output for the job. Try and fix the error.
 
-Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step2".
+Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step3".
 Re-run the job and take a look at the outcome.
 # retest after pull request.
 
+# hier gebleven!!!
 
 # Step 4 - Create Deployment Job
 
