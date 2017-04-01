@@ -1,4 +1,4 @@
-# Sogeti Digital Bootcamp -- Jenkins 2
+# Sogeti Digital Bootcamp - Jenkins 2
 
 In this bootcamp we will show you the basics on how to use Jenkins 2 as an automation tool. 
 The bootcamp cosnsists of 5 steps for the basics and 1 advanced usage sample. 
@@ -42,7 +42,7 @@ For configuration instruction including images (Windows) click [here](/docs/Conf
 
 When the wizard completes Jenkins will 
 
-#AANVULLEN!
+# AANVULLEN!
 
 Additional configuration
 
@@ -66,6 +66,8 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
 - Click on "Save".
 
+# willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
+
 Now we want to test our job. so we start it manually.
 
 - After saving click on the "Back to Dashboard" option to go back to the Jenkins Dashboard.
@@ -81,6 +83,8 @@ Now we want to test our job. so we start it manually.
 [../Back to ToC](#Table-of-Contents)
 
 For detailed instruction including images click [here](/docs/Step2.md)
+
+Now that the code can be found on the git repository we can see if the code will compile / build and see if there are no syntax errors of any kind.
 
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Compile Code” as the item name and choose "Freestyle project"
@@ -99,8 +103,9 @@ Actual output can be found on the bottom. Alternatively you can re-run the build
 
 Can you find out what went wrong with the code and why it did not build? Go and edit the code and re-run the job until it completes.
 
-Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step1".
-# rename Branch 2 to 3. Rename Branch 1 to 2. edit this tutorial.
+Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step2".
+Re-run the job and take a look at the outcome.
+# retest after pull request.
 
 Note on the jenkins Dashboard: 
 Note that we can also have a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
@@ -116,6 +121,9 @@ Thunderstorms means most of the past runs were unsuccessful.
 
 For detailed instruction including images click [here](/docs/Step3.md)
 
+Now that our code compiles we would like to run some tests. For Maven we can request to perform a standard set of Unit tests. Other languages might have a different implementation
+
+- Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Test” as the item name and choose "Freestyle project"
 - Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
