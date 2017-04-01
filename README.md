@@ -7,7 +7,7 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 
 These are the steps:
 
-- Step 1 - Create Checkout Job
+- [Step 1 - Create Checkout Job](#step-1---create-checkout-job)
 - Step 2 - Create Compile Job
 - Step 3 - Create Unit Test Job
 - Step 4 - Create Deployment Job
