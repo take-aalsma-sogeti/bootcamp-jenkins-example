@@ -18,7 +18,7 @@ Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 - Follow the install wizard
 - [Configure Jenkins](#Jenkins-Configuration)
 
-![.](/docs/images/Step1/Step1-1.png "Logo Title Text 1")
+![alt](/docs/images/Step1/Step1-1.png "Logo Title Text 1")
 
 
 ## additional software
