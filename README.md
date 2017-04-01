@@ -21,6 +21,7 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 
 For installation instruction including images (Windows) click [here](/docs/Install.md)
 
+## Jenkins
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 
 install instructions
@@ -28,11 +29,20 @@ install instructions
 - Follow the install wizard
 - [Configure Jenkins](#Jenkins-Configuration)
 
+## additional software
 Additionally for this bootcamp you will need Git and Java SDK. If you do not have these find the downloads below. 
 Instructions with screens are added in the [Detailed instrcutions](/docs/Install.md)
 
 - Git can be downloaded [here](https://git-scm.com/download/win)
 - Java SDK can be downloaded [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+
+## github account
+Since this bootcamp uses git it is mandatory to have a github account.
+- Go to [Github](www.github.com) and create a user account.
+- go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
+- Fork the repository into your own account.
+
+# of we moeten iets kunnen met local git repos. is mij niet geluk. Heb daarom een instructie toegevoegd om te forken.
 
 #Jenkins Configuration
 
@@ -63,7 +73,7 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Go to the Jenkins Dashboard (http://localhost:8080/)
 - Go to "New item". Enter “Code Checkout” as the item name and choose "Freestyle project"
 - Go to "Source code management" and select "Git". 
-- Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Enter https://github.com/<username>/bootcamp-jenkins-example.git in the field "Repository URL".
 - Click on "Save".
 
 # willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
