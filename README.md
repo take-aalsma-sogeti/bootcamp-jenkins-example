@@ -37,6 +37,9 @@ Now we want to test our job. so we start it manually.
 
 
 # Step 2 - Create Compile Job
+
+For detailed instruction including images click [here](/docs/Step2.md)
+
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Compile Code” as the item name and choose "Freestyle project"
 - Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
@@ -59,6 +62,9 @@ Thunderstorms means most of the past runs were unsuccessful.
 
 
 # Step 3 - Create Unit Test Job
+
+For detailed instruction including images click [here](/docs/Step3.md)
+
 - Go to "New item". Enter “Test” as the item name and choose "Freestyle project"
 - Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
@@ -67,12 +73,18 @@ Thunderstorms means most of the past runs were unsuccessful.
 
 # Step 4 - Create Deployment Job
 
+For detailed instruction including images click [here](/docs/Step4.md)
+
 Since we can't actually deploy our test application we have chosen to simulate this step by creating a notification step instead.
 
 # Step 5 - Create pipeline with all jobs
 
+For detailed instruction including images click [here](/docs/Step5.md)
+
 No Content Yet
 
 # Step 6 - Advanced Usage (DSL)
+
+For detailed instruction including images click [here](/docs/Step6.md)
 
 No Content Yet.
