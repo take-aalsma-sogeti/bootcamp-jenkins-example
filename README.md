@@ -14,6 +14,10 @@ These are the steps:
 - Step 5 - Create pipeline with all jobs
 - Step 6 - Advanced Usage (DSL)
 
+For installation instruction including images (Windows) click [here](/docs/Install.md)
+
+For configuration instruction including images (Windows) click [here](/docs/Config.md)
+
 # Step 1 - Create Checkout Job
 
 For detailed instruction including images click [here](/docs/Step1.md)
