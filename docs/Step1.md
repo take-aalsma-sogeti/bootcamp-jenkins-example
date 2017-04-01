@@ -21,7 +21,7 @@ Now we want to test our job. so we start it manually.
 - If you are interested in the details of the job execution you can click on the "#1" (or any other number) to see the details.
 
 
-![alt text](docs/images/step1/Step1-1.png "Logo Title Text 1")
+![alt text](/docs/images/step1/Step1-1.png "Logo Title Text 1")
 
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
