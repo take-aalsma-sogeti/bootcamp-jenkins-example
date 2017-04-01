@@ -99,7 +99,8 @@ Actual output can be found on the bottom. Alternatively you can re-run the build
 
 Can you find out what went wrong with the code and why it did not build? Go and edit the code and re-run the job until it completes.
 
-Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step1"
+Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step1".
+# rename Branch 2 to 3. Rename Branch 1 to 2. edit this tutorial.
 
 Note on the jenkins Dashboard: 
 Note that we can also have a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
