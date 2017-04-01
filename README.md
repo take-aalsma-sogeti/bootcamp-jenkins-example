@@ -21,6 +21,8 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 
 For installation instruction including images (Windows) click [here](/docs/Install.md)
 
+It would be silly to let you do a Jenkins Bootcamp without the software we are going to use mainly... Below are instructions to download Jenkins, additional software and to set up your GitHub Account.
+
 ## Jenkins
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 
