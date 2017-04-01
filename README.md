@@ -16,7 +16,7 @@ These are the steps:
 
 # Step 1 - Create Checkout Job
 
-For detailed instruction including images click [here](../blob/master/docs/Step1.md)
+For detailed instruction including images click [here](/blob/master/docs/Step1.md)
 
 One of the first tasks in our automation process is to retrieve the code from version control to be used in the automation process. To do this we want to approach the Git Repository and checkout the code.
 
