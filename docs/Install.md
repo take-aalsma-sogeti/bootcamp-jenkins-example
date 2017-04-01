@@ -18,11 +18,11 @@ Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 - Follow the install wizard
 - [Configure Jenkins](#Jenkins-Configuration)
 
-![](/docs/images/Step1/install-1.png "Logo Title Text 1")
-![](/docs/images/Step1/install-2.png "Logo Title Text 1")
-![](/docs/images/Step1/install-3.png "Logo Title Text 1")
-![](/docs/images/Step1/install-4.png "Logo Title Text 1")
-![](/docs/images/Step1/install-5.png "Logo Title Text 1")
+![](/docs/images/Install/install-1.png "Logo Title Text 1")
+![](/docs/images/Install/install-2.png "Logo Title Text 1")
+![](/docs/images/Install/install-3.png "Logo Title Text 1")
+![](/docs/images/Install/install-4.png "Logo Title Text 1")
+![](/docs/images/Install/install-5.png "Logo Title Text 1")
 
 
 ## additional software
@@ -34,19 +34,19 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 
 ### Git
 
-![](/docs/images/Step1/git-1.png "Logo Title Text 1")
-![](/docs/images/Step1/git-2.png "Logo Title Text 1")
-![](/docs/images/Step1/git-3.png "Logo Title Text 1")   
-![](/docs/images/Step1/git-4.png "Logo Title Text 1")
-![](/docs/images/Step1/git-5.png "Logo Title Text 1")
+![](/docs/images/Install/git-1.png "Logo Title Text 1")
+![](/docs/images/Install/git-2.png "Logo Title Text 1")
+![](/docs/images/Install/git-3.png "Logo Title Text 1")   
+![](/docs/images/Install/git-4.png "Logo Title Text 1")
+![](/docs/images/Install/git-5.png "Logo Title Text 1")
 
 ### Java SDK
 
-![](/docs/images/Step1/java-1.png "Logo Title Text 1")
-![](/docs/images/Step1/java-2.png "Logo Title Text 1")
-![](/docs/images/Step1/java-3.png "Logo Title Text 1")
-![](/docs/images/Step1/java-4.png "Logo Title Text 1")
-![](/docs/images/Step1/Java-5.png "Logo Title Text 1")
+![](/docs/images/Install/java-1.png "Logo Title Text 1")
+![](/docs/images/Install/java-2.png "Logo Title Text 1")
+![](/docs/images/Install/java-3.png "Logo Title Text 1")
+![](/docs/images/Install/java-4.png "Logo Title Text 1")
+![](/docs/images/Install/Java-5.png "Logo Title Text 1")
 
 ## github account
 Since this bootcamp uses git it is mandatory to have a github account.
