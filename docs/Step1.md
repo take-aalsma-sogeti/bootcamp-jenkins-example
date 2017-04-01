@@ -24,4 +24,4 @@ Now we want to test our job. so we start it manually.
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
-![alt text](https://onedrive.live.com/embed?cid=DF79265212273E99&resid=DF79265212273E99%21104394&authkey=AGIjarCizK0KWuI "Logo Title Text 1")
+![alt text](https://xphbba-ch3302.files.1drv.com/y4mcryG4D7uNA0GtC9jl6eQJl54qtnrzo474jHOnceaHV0eo4uAIEluWupy6Uf4Mvc3fgHRFNkI2FWpDv3E9P5nMMG2nB8K4wN8zsfIp7FuiR2lbHcNADggQQyHUUlfMinaXKpoQIodzIqtywQqaI2yRzLaVcklWRbwRJ1od8Rqn7kD0UgRV5V51I0IemQfxqImzK7jzHYQJlFFqoSON_W8aA?width=1192&height=840&cropmode=none "Logo Title Text 1")
