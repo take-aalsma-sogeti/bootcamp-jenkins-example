@@ -18,11 +18,21 @@ These are the steps:
 
 One of the first tasks in our automation process is to retrieve the code from version control to be used in the automation process. To do this we want to approach the Git Repository and checkout the code.
 
-- Go to "New item". Enter “Test” as the item name and choose "Freestyle project"
-- Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Go to the Jenkins Dashboard (http://localhost:8080/)
+- Go to "New item". Enter “Code Checkout” as the item name and choose "Freestyle project"
+- Go to "Source code management" and select "Git". 
+- Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
 - Click on "Save".
 
 Now we want to test our job. so we start it manually.
+
+- After saving click on the "Back to Dashboard" option to go back to the Jenkins Dashboard.
+- Scroll down to find the created jobs.
+- Click on "Schedule a build" icon all the way to the right to mark this job for execution
+- Look at the icon on the left for the status
+- If you are interested in the details of the job execution you can click on the "#1" (or any other number) to see the details.
+
+
 
 Please have a look at the results.. and see if anything went wrong.
 # Step 2 - Create Compile Job
