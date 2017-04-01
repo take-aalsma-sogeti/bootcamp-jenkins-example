@@ -17,13 +17,44 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 
 # Jenkins installation
 
+[../Back to ToC](#Table-of-Contents)
+
 For installation instruction including images (Windows) click [here](/docs/Install.md)
+
+Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
+
+install instructions
+
+- Follow the install wizard
+- [Configure Jenkins](#Jenkins-Configuration)
+
+Additionally for this bootcamp you will need Git and Java SDK. If you do not have these find the downloads below. 
+Instructions with screens are added in the [Detailed instrcutions](/docs/Install.md)
+
+- Git can be downloaded [here](https://git-scm.com/download/win)
+- Java SDK can be downloaded [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 #Jenkins Configuration
 
+[../Back to ToC](#Table-of-Contents)
+
 For configuration instruction including images (Windows) click [here](/docs/Config.md)
 
+When the wizard completes Jenkins will 
+
+#AANVULLEN!
+
+Additional configuration
+
+Git:
+
+Java:
+
+Maven:
+
 # Step 1 - Create Checkout Job
+
+[../Back to ToC](#Table-of-Contents)
 
 For detailed instruction including images click [here](/docs/Step1.md)
 
@@ -47,6 +78,8 @@ Now we want to test our job. so we start it manually.
 
 # Step 2 - Create Compile Job
 
+[../Back to ToC](#Table-of-Contents)
+
 For detailed instruction including images click [here](/docs/Step2.md)
 
 - Go back to your Jenkins Dashboard if not already there.
@@ -60,9 +93,15 @@ Again we have to run this job. We can go back to the Jenkins Dashboard and sched
 Please have a look at the results.. and see if anything went wrong.
 
 
-We can see that instead of the blue icon we have a red icon. Something went wrong in executing this job. Open the details to find out why the job did not succeed.
+We can see that instead of the blue icon we have a red icon. Something went wrong in executing this job. Open the details to find out why the job did not succeed. Click "Console Output for actual build info"
+Note: The first time running this job may need addition libraries for maven. This can clog the console output with download info. 
+Actual output can be found on the bottom. Alternatively you can re-run the build and see the Console output directly.
 
+Can you find out what went wrong with the code and why it did not build? Go and edit the code and re-run the job until it completes.
 
+Alternatively you can change the branch in the job in the "Source Code management" tab to 
+
+Note on the jenkins Dashboard: 
 Note that we can also have a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
 Sunny weather means nothing went wrong. 
 Cloudy weather means some executions were unsuccessful. 
@@ -71,6 +110,8 @@ Thunderstorms means most of the past runs were unsuccessful.
 
 
 # Step 3 - Create Unit Test Job
+
+[../Back to ToC](#Table-of-Contents)
 
 For detailed instruction including images click [here](/docs/Step3.md)
 
@@ -82,17 +123,23 @@ For detailed instruction including images click [here](/docs/Step3.md)
 
 # Step 4 - Create Deployment Job
 
+[../Back to ToC](#Table-of-Contents)
+
 For detailed instruction including images click [here](/docs/Step4.md)
 
 Since we can't actually deploy our test application we have chosen to simulate this step by creating a notification step instead.
 
 # Step 5 - Create pipeline with all jobs
 
+[../Back to ToC](#Table-of-Contents)
+
 For detailed instruction including images click [here](/docs/Step5.md)
 
 No Content Yet
 
 # Step 6 - Advanced Usage (DSL)
+
+[../Back to ToC](#Table-of-Contents)
 
 For detailed instruction including images click [here](/docs/Step6.md)
 
