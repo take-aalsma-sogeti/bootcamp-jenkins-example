@@ -1,20 +1,25 @@
-# Global
+# Sogeti Digital Bootcamp -- Jenkins 2
 
 In this bootcamp we will show you the basics on how to use Jenkins 2 as an automation tool. 
 The bootcamp cosnsists of 5 steps for the basics and 1 advanced usage sample. 
 Each of the 5 steps represent steps in your automation process and will either be an action to take (job) or automation of those tasks (pipeline). 
 The advanced usage sample will teach you how to use DSL to parameterize your jobs and pipelines for easy re-use 
 
-These are the steps:
-
+# Table of Contents
+- [Installation](#Jenkins-installation)
+- [Configuration](#Jenkins-Configuration)
 - [Step 1 - Create Checkout Job](#step-1---create-checkout-job)
-- Step 2 - Create Compile Job
-- Step 3 - Create Unit Test Job
-- Step 4 - Create Deployment Job
-- Step 5 - Create pipeline with all jobs
-- Step 6 - Advanced Usage (DSL)
+- [Step 2 - Create Compile Job](#step-2---create-compile-job)
+- [Step 3 - Create Unit Test Job](#step-3---create-unit-test-job)
+- [Step 4 - Create Deployment Job](#step-4---create-deployment-job)
+- [Step 5 - Create pipeline with all jobs](#step-5---create-pipeline-with-all-jobs)
+- [Step 6 - Advanced Usage (DSL)](#step-6---advanced-usage-dsl)
+
+# Jenkins installation
 
 For installation instruction including images (Windows) click [here](/docs/Install.md)
+
+#Jenkins Configuration
 
 For configuration instruction including images (Windows) click [here](/docs/Config.md)
 
