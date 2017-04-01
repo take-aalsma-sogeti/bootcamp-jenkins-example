@@ -74,6 +74,7 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Go to "New item". Enter “Code Checkout” as the item name and choose "Freestyle project"
 - Go to "Source code management" and select "Git". 
 - Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
+- Make sure you use your own username
 - Click on "Save".
 
 # willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
@@ -98,7 +99,8 @@ Now that the code can be found on the git repository we can see if the code will
 
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Compile Code” as the item name and choose "Freestyle project"
-- Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
+- Make sure you use your own username
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
 - Enter "clean compile" in the "Goals" field.
 - Click on "Save".
@@ -135,10 +137,20 @@ Now that our code compiles we would like to run some tests. For Maven we can req
 
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Test” as the item name and choose "Freestyle project"
-- Go to "Source code management" and select "Git". Enter https://github.com/jeroenschepens/bootcamp-jenkins-example.git in the field "Repository URL".
+- Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
+- Make sure you use your own username
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
 - Enter "clean test" in the "Goals" field.
 - Click on "Save".
+
+Now we are going to execute the unit test. Click "Build Now" to start the job.
+
+Take a look at the outcome and the console output for the job. Try and fix the error.
+
+Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step2".
+Re-run the job and take a look at the outcome.
+# retest after pull request.
+
 
 # Step 4 - Create Deployment Job
 
