@@ -142,6 +142,7 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Go to "Source code management" and select "Git". 
 - Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
 - Make sure you use your own username
+- Check that Branch specifies "*/Master"
 - Click on "Save".
 
 # willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
@@ -152,7 +153,7 @@ Now we want to test our job. so we start it manually.
 - Scroll down to find the created jobs.
 - Click on "Schedule a build" icon all the way to the right to mark this job for execution
 - Look at the icon on the left for the status. We see that it is Blue which indicates a successful execution.
-- If you are interested in the details of the job execution you can click on the "#1" (or any other number) to see the details.
+- If you are interested in the details of the job execution you can click on the "#1" (or any other number) to open the specific job execution.
 
 ***
 
