@@ -9,7 +9,7 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 
 # Table of Contents
 - [Installation](#jenkins-installation)
-- [Configuration](#Jenkins-configuration)
+- [Configuration](#jenkins-configuration)
 - [Step 1 - Create Checkout Job](#step-1---create-checkout-job)
 - [Step 2 - Create Compile Job](#step-2---create-compile-job)
 - [Step 3 - Create Unit Test Job](#step-3---create-unit-test-job)
