@@ -22,7 +22,7 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 
 # Jenkins installation
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For installation instruction including images (Windows) click [here](/docs/Install.md)
 
@@ -73,7 +73,7 @@ or ask one of the instructors to help out
 
 # Jenkins Configuration
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For configuration instruction including images (Windows) click [here](/docs/Config.md)
 
@@ -131,7 +131,7 @@ If you don't want jenkins to run on 8080 or if another service you use runs on t
 
 # Step 1 - Create Checkout Job
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step1.md)
 
@@ -159,7 +159,7 @@ Now we want to test our job. so we start it manually.
 
 # Step 2 - Create Compile Job
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step2.md)
 
@@ -198,7 +198,7 @@ Thunderstorms means most of the past runs were unsuccessful.
 
 # Step 3 - Create Unit Test Job
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step3.md)
 
@@ -226,7 +226,7 @@ Re-run the job and take a look at the outcome.
 
 # Step 4 - Create Deployment Job
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step4.md)
 
@@ -236,7 +236,7 @@ Since we can't actually deploy our test application we have chosen to simulate t
 
 # Step 5 - Create pipeline with all jobs
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step5.md)
 
@@ -246,7 +246,7 @@ No Content Yet
 
 # Step 6 - Advanced Usage (DSL)
 
-[../Back to ToC](#Table-of-Contents)
+[../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step6.md)
 
