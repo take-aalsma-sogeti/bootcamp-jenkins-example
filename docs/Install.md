@@ -100,10 +100,10 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 
 ### Java SDK
 
-![](/docs/images/Install/java-1.png "Logo Title Text 1")
-![](/docs/images/Install/java-2.png "Logo Title Text 1")
-![](/docs/images/Install/java-3.png "Logo Title Text 1")
-![](/docs/images/Install/java-4.png "Logo Title Text 1")
+![](/docs/images/Install/Java-1.png "Logo Title Text 1")
+![](/docs/images/Install/Java-2.png "Logo Title Text 1")
+![](/docs/images/Install/Java-3.png "Logo Title Text 1")
+![](/docs/images/Install/Java-4.png "Logo Title Text 1")
 ![](/docs/images/Install/Java-5.png "Logo Title Text 1")
 
 ## github account
