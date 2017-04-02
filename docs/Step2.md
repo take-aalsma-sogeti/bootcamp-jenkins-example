@@ -85,7 +85,7 @@ If you can't wait for help or can't figure out what went wrong you can follow th
 
 ### Alternative Path
 
-[../Back to ToC](#table-of-contents)
+[../Back to ToC](#table-of-contents#table-of-contents)
 
 
 Alternatively you can change the branch in the job to one where we fixed the code for you
