@@ -46,8 +46,8 @@ We will be using the LTS version (2.46.1)
 
 - Run Docker Command "run docker pull jenkins"
 - Expose a container, exposing it on port
-- - "docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home:z -t jenkins"
-- - for more info click [here](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+with+Docker)
+  - "docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home:z -t jenkins"
+  - for more info click [here](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+with+Docker)
 
 #### Mac
 
@@ -128,10 +128,10 @@ Since this bootcamp uses git it is mandatory to have a github account. If you al
 - Fork the repository into your own account.
 - if you're unsure how to use GitHub it is advised to do the [Hello World](https://guides.github.com/activities/hello-world/) course. Or [check out the video guides](https://www.youtube.com/githubguides)
 - the actions you need to focus on are
-- - Fork
-- - Clone
-- - Commit
-- - Push
+  - Fork
+  - Clone
+  - Commit
+  - Push
 
 ![](/docs/images/Install/gh-1.png "Logo Title Text 1")
 ![](/docs/images/Install/gh-2.png "Logo Title Text 1")
