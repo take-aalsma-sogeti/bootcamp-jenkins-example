@@ -1,19 +1,19 @@
 click [here](../README.md) to go back to the main README. 
 
 # Table of Contents
-- [jenkins](#Jenkins)
+- [jenkins](#jenkins)
   - [Install](#install-instructions)
-    - [Java](#Java)
-    - [Docker](#Docker)
-    - [Mac](#Mac)
-    - [Windows](#Windows)
-  - [Your first run](#First-Run)
+    - [Java](#java)
+    - [Docker](#docker)
+    - [Mac](#mac)
+    - [Windows](#windows)
+  - [Your first run](#first-run)
   - [Changing Ports](#change-port)
-  - [next Up](#Next-Up)
-- [Additional Software](#Additional-Software)
-  - [Git](#Git)
-  - [Java SDK](#Java-SDK)
-  - [GitHub Account](#GitHub-Account)
+  - [next Up](#next-Up)
+- [Additional Software](#additional-software)
+  - [Git](#git)
+  - [Java SDK](#java-sdk)
+  - [GitHub Account](#github-account)
 
 It would be silly to let you do a Jenkins Bootcamp without the software we are going to use mainly... Below are instructions to download Jenkins, additional software and to set up your GitHub Account.
 
