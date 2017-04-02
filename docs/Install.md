@@ -95,6 +95,8 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 ![](/docs/images/Install/git-8.png "Logo Title Text 1")
 ![](/docs/images/Install/git-9.png "Logo Title Text 1")
 ![](/docs/images/Install/git-10.png "Logo Title Text 1")
+![](/docs/images/Install/git-11.png "Logo Title Text 1")
+![](/docs/images/Install/git-12.png "Logo Title Text 1")
 
 ### Java SDK
 
