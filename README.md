@@ -258,4 +258,8 @@ more info on using Job DSL can be found [here](https://jenkinsci.github.io/job-d
 
 # additional tutorials on Jenkins
 
-- [Game of Life](https://github.com/tsteenbakkers/game-of-life) (Maven) 
+[../Back to ToC](#table-of-contents)
+
+- [Game of Life](https://github.com/tsteenbakkers/game-of-life) (Maven)
+- [Job DSL](https://jenkinsci.github.io/job-dsl-plugin/)
+ 
