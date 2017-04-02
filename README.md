@@ -8,8 +8,8 @@ Each of the 5 steps represent steps in your automation process and will either b
 The advanced usage sample will teach you how to use DSL to parameterize your jobs and pipelines for easy re-use 
 
 # Table of Contents
-- [Installation](#Jenkins-installation)
-- [Configuration](#Jenkins-Configuration)
+- [Installation](#jenkins-installation)
+- [Configuration](#Jenkins-configuration)
 - [Step 1 - Create Checkout Job](#step-1---create-checkout-job)
 - [Step 2 - Create Compile Job](#step-2---create-compile-job)
 - [Step 3 - Create Unit Test Job](#step-3---create-unit-test-job)
