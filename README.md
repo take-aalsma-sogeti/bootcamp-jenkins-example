@@ -263,5 +263,6 @@ more info on using Job DSL can be found [here](https://jenkinsci.github.io/job-d
 - [Game of Life](https://github.com/tsteenbakkers/game-of-life) (Maven)
 - [Job DSL](https://jenkinsci.github.io/job-dsl-plugin/)
 
+***
 
  [Back to top](#table-of-contents)

@@ -7,6 +7,8 @@ click [here](../README.md#table-of-contents) to go back to the main README.
 - [Create Checkout Job](#create-checkout-job)
 - [Run Checkout Job](#run-checkout-job)
 
+***
+
 ## create checkout job
 
 [../Back to ToC](#table-of-contents)
@@ -58,7 +60,7 @@ Look at the icon on the left for the status. We see that it is Blue which indica
 
 If you are interested in the details of the job execution you can click on the "#1" (or any other number) to open the specific job execution.
 
-
+***
 [Back to top](#table-of-contents)
 
 click [here](../README.md#table-of-contents) to go back to the main README. 

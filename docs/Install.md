@@ -269,7 +269,9 @@ Watch the awesome animation :)
   - use the *.git link in your tool of liking to clone the repo locally
   - Click open in Desktop to open the source in [GitHub Desktop](https://desktop.github.com/)
   - alternatively you can use the GIT CLI and download the zip.
-
+  
+  ***
+  
   [Back to Top](#table-of-contents)
 
   click [here](../README.md#table-of-contents) to go back to the main README. 

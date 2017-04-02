@@ -146,7 +146,7 @@ If you don't want jenkins to run on 8080 or if another service you use runs on t
 - restart jenkins (http://localhost:8080/safeRestart)
 - alternatively you can start java on another port using "java -jar jenkins.war -httpPort=8081" (or any other port)
 
-
+***
 [Back to top](#table-of-contents)
 
 click [here](../README.md#table-of-contents) to go back to the main README. 

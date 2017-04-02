@@ -9,6 +9,7 @@ click [here](../README.md#table-of-contents) to go back to the main README.
   - [alternative path](#alternative-path)
 - [weather Icon](#weather-icon)
 
+***
 
 ## create compile job
 
@@ -53,9 +54,9 @@ Click on "Save".
 Again we have to run this job. We can go back to the Jenkins Dashboard and schedule it immediately 
 or we can click the "Build Now" Option after saving the previous steps.
 
-
-
 Please have a look at the results.. and see if anything went wrong.
+
+***
 
 ## Fix Syntax
 
@@ -83,6 +84,8 @@ In order for jenkins to register your new code you need to edit the file locally
 Ask help from one of the instructors if you need
 If you can't wait for help or can't figure out what went wrong you can follow the alternative Path
 
+***
+
 ### Alternative Path
 
 [../Back to ToC](#table-of-contents#table-of-contents)
@@ -104,6 +107,8 @@ in the "Source Code management" tab to "*/step2".
 
 Re-run the job and take a look at the outcome.
 
+***
+
 ## Weather Icon
 
 Note on the jenkins Dashboard: 
@@ -113,7 +118,7 @@ Sunny weather means nothing went wrong.
 Cloudy weather means some executions were unsuccessful. 
 Thunderstorms means most of the past runs were unsuccessful.
 
-
+***
 [Back to top](#table-of-contents)
 
 click [here](../README.md#table-of-contents) to go back to the main README. 

@@ -8,6 +8,8 @@ click [here](../README.md#table-of-contents) to go back to the main README.
 - [fix Code](#fix-code)
   - [alternative path](#alternative-path)
 
+***
+
 ## create Unit Test job
 
 [../Back to ToC](#table-of-contents)
@@ -43,6 +45,8 @@ Enter "clean test" in the "Goals" field.\
 
 Click on "Save"
 
+***
+
 ## Run Unit Test job
 
 [../Back to ToC](#table-of-contents)
@@ -60,6 +64,8 @@ Take a look at the outcome.
 
 Go to the console output and take a look at the error
 
+***
+
 ## Fix Code
 
 [../Back to ToC](#table-of-contents)
@@ -73,6 +79,7 @@ In order for jenkins to register your new code you need to edit the file locally
 Ask help from one of the instructors if you need
 If you can't wait for help or can't figure out what went wrong you can follow the alternative Path
 
+***
 
 ### Alternative Path
 
@@ -92,7 +99,7 @@ in the "Source Code management" tab to "*/step3".
 
 Re-run the job and take a look at the outcome.
 
-
+***
 [Back to top](#table-of-contents)
 
 click [here](../README.md#table-of-contents) to go back to the main README. 
