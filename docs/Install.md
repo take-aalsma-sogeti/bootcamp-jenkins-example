@@ -107,7 +107,28 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 ![](/docs/images/Install/Java-5.png "Logo Title Text 1")
 
 ## github account
-Since this bootcamp uses git it is mandatory to have a github account.
-- Go to [Github](www.github.com) and create a user account.
+Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
+- Go to [Github](http://www.github.com) and create a user account.
 - go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
 - Fork the repository into your own account.
+- if you're unsure how to use GitHub it is advised to do the [Hello World](https://guides.github.com/activities/hello-world/) course. Or [check out the video guides](https://www.youtube.com/githubguides)
+- the actions you need to focus on are
+- - Fork
+- - Clone
+- - Commit
+- - Push
+
+![](/docs/images/Install/gh-1.png "Logo Title Text 1")
+![](/docs/images/Install/gh-2.png "Logo Title Text 1")
+![](/docs/images/Install/gh-3.png "Logo Title Text 1")
+
+
+Now go and verify your e-mail address.
+
+![](/docs/images/Install/gh-vf-1.jpg "Logo Title Text 1")
+![](/docs/images/Install/gh-vf-2.jpg "Logo Title Text 1")
+![](/docs/images/Install/gh-vf-3.jpg "Logo Title Text 1")
+
+![](/docs/images/Install/gh-4.png "Logo Title Text 1")
+![](/docs/images/Install/gh-5.png "Logo Title Text 1")
+![](/docs/images/Install/gh-6.png "Logo Title Text 1")
