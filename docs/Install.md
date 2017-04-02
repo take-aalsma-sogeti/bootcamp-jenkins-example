@@ -13,16 +13,61 @@ Note that we only discuss the windows versions of the software here
 ## Jenkins
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 
+We will be using the LTS version (2.46.1)
+
+![](/docs/images/Install/install-0.png "Download LTS")
+
+![](/docs/images/Install/install-00.png "Choose Version")
+
+
 ### install instructions
 
-- Follow the install wizard
-- [Configure Jenkins](#Jenkins-Configuration)
+#### Java
 
-![](/docs/images/Install/install-1.png "Logo Title Text 1")
-![](/docs/images/Install/install-2.png "Logo Title Text 1")
-![](/docs/images/Install/install-3.png "Logo Title Text 1")
-![](/docs/images/Install/install-4.png "Logo Title Text 1")
-![](/docs/images/Install/install-5.png "Logo Title Text 1")
+- Run Java Runtime Environment
+- use command "java -jar jenkins.war"
+
+#### Docker
+
+- Run Docker Command "run docker pull jenkins"
+- Expose a container, exposing it on port
+- - "docker run -d -p 49001:8080 -v $PWD/jenkins:/var/jenkins_home:z -t jenkins"
+- - for more info click [here](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+with+Docker)
+
+#### Mac
+
+Mac Users can use the outdated Mac OS App
+
+- follow instruction from [stisti on GitHub](https://github.com/stisti/jenkins-app)
+
+#### Windows
+
+- Follow the install wizard
+- [Configure Jenkins](/docs/Config.md)
+
+The following images represent the install wizard. no real surpises to anyone using a computer.
+
+![](/docs/images/Install/install-1.png "Opem the .exe in RAR")
+
+![](/docs/images/Install/install-2.png "Start wizard")
+
+![](/docs/images/Install/install-3.png "Choose destination folder")
+
+![](/docs/images/Install/install-4.png "Install")
+
+![](/docs/images/Install/install-5.png "Finished")
+
+After Jenkins has been installed in will open default on "http://localhost:8080"
+
+If you don't want jenkins to run on 8080 or if another service you use runs on that port you can change it:
+
+- find Jenkins.xml (in the install directory you choose in the wizard)
+- search for "--httpPort=8080".
+- replace 8080 with the desired port number
+- restart jenkins (http://localhost:8080/safeRestart)
+- alternatively you can start java on another port using "java -jar jenkins.war -httpPort=8081" (or any other port)
+
+You can continue [Configuring Jenkins](/docs/Config.md) and continue installing the additional software later. or continue installing the software doing the configuration later.
 
 
 ## additional software
