@@ -1,3 +1,5 @@
+![](https://wiki.jenkins-ci.org/download/attachments/2916393/logo-title.png "jenkins Logo Wiki")
+
 # Sogeti Digital Bootcamp - Jenkins 2
 
 In this bootcamp we will show you the basics on how to use Jenkins 2 as an automation tool. 
