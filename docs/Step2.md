@@ -1,4 +1,4 @@
-click [here](../README.md) to go back to the main README. 
+click [here](../README.md#table-of-contents) to go back to the main README. 
 
 # Step 2 - Create Compile Job
 
@@ -115,3 +115,5 @@ Thunderstorms means most of the past runs were unsuccessful.
 
 
 [Back to top](#table-of-contents)
+
+click [here](../README.md#table-of-contents) to go back to the main README. 

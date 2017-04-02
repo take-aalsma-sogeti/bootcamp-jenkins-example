@@ -271,3 +271,5 @@ Watch the awesome animation :)
   - alternatively you can use the GIT CLI and download the zip.
 
   [Back to Top](#table-of-contents)
+
+  click [here](../README.md#table-of-contents) to go back to the main README. 
