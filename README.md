@@ -188,7 +188,7 @@ Re-run the job and take a look at the outcome.
 # retest after pull request.
 
 Note on the jenkins Dashboard: 
-Note that we can also have a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
+Note that we can also see a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
 Sunny weather means nothing went wrong. 
 Cloudy weather means some executions were unsuccessful. 
 Thunderstorms means most of the past runs were unsuccessful.
