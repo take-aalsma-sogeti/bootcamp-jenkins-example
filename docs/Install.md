@@ -43,7 +43,6 @@ Mac Users can use the outdated Mac OS App
 #### Windows
 
 - Follow the install wizard
-- [Configure Jenkins](/docs/Config.md)
 
 The following images represent the install wizard. no real surpises to anyone using a computer.
 
@@ -57,7 +56,12 @@ The following images represent the install wizard. no real surpises to anyone us
 
 ![](/docs/images/Install/install-5.png "Finished")
 
+
+## first run
+
 After Jenkins has been installed in will open default on "http://localhost:8080"
+
+### change port
 
 If you don't want jenkins to run on 8080 or if another service you use runs on that port you can change it:
 
@@ -66,6 +70,8 @@ If you don't want jenkins to run on 8080 or if another service you use runs on t
 - replace 8080 with the desired port number
 - restart jenkins (http://localhost:8080/safeRestart)
 - alternatively you can start java on another port using "java -jar jenkins.war -httpPort=8081" (or any other port)
+
+### next up?
 
 You can continue [Configuring Jenkins](/docs/Config.md) and continue installing the additional software later. or continue installing the software doing the configuration later.
 
