@@ -14,6 +14,8 @@ click [here](../README.md) to go back to the main README.
 
 ## Unlock Jenkins
 
+[../Back to ToC](#table-of-contents)
+
 After Jenkins has been installed in will open default on "http://localhost:8080"
 
 Upon first run Jenkins will be locked and you will need to unlock it.
@@ -26,6 +28,8 @@ In this file you will find a token string which needs to be copied into the Jenk
 
 
 ## Install Plugins
+
+[../Back to ToC](#table-of-contents)
 
 
 ![](/docs/images/Config/config-2.png "Suggested Plugins")
@@ -50,6 +54,8 @@ After creating a user jenkins is ready. Select Start Using Jenkins and you will 
 ***
 
 ## additional plugins
+
+[../Back to ToC](#table-of-contents)
 
 In order to complete the bootcamp additional plugins are needed. 
 
@@ -76,7 +82,9 @@ Alternatively you can "install without restart" and perform a manual restart wit
 
 ## Jenkins config
 
-If you haven't done so already there is additional software available - [Additional Software](/docs/install.md#Additional-Software)
+[../Back to ToC](#table-of-contents)
+
+If you haven't done so already install the additional software in order to continue - [Additional Software](/docs/install.md#Additional-Software)
 
 ![](/docs/images/Config/config-9.png "Manage Plugins")
 
@@ -90,12 +98,16 @@ In global Tool configuration configure the following options
 
 ### Git
 
+[../Back to ToC](#table-of-contents)
+
 ![](/docs/images/Config/config-11.png "Manage Jenkins")
 
 Name: Git
 Path: __PathWhereYouInstalledGit__\git.exe (or find the path if you are using a nin-windows OS)
 
 ### Java
+
+[../Back to ToC](#table-of-contents)
 
 ![](/docs/images/Config/Java-1.png "Manage Jenkins")
 
@@ -110,6 +122,8 @@ JAVA_HOME: __PathWhereYouInstalledJavaSDK__ (don't include any libraries. Just t
 
 ### Maven
 
+[../Back to ToC](#table-of-contents)
+
 ![](/docs/images/Config/config-12.png "Manage Jenkins")
 
 Name: M3
@@ -120,6 +134,8 @@ Version 3.3.9
 
 ## Optional Configuration
 
+[../Back to ToC](#table-of-contents)
+
 ### Change Port
 
 If you don't want jenkins to run on 8080 or if another service you use runs on that port you can change it:
@@ -129,3 +145,6 @@ If you don't want jenkins to run on 8080 or if another service you use runs on t
 - replace 8080 with the desired port number
 - restart jenkins (http://localhost:8080/safeRestart)
 - alternatively you can start java on another port using "java -jar jenkins.war -httpPort=8081" (or any other port)
+
+
+[Back to top](#table-of-contents)

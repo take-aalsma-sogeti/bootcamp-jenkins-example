@@ -28,6 +28,9 @@ In this Chapter we will discuss the following topics:
 ***
 
 ## Jenkins
+
+[../Back to ToC](#table-of-contents)
+
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
 
 We will be using the LTS version (2.46.1)
@@ -43,12 +46,16 @@ You can either click the java War file or select a version to your liking from t
 
 ### install instructions
 
+[../Back to ToC](#table-of-contents)
+
 #### Java
 
 - Run Java Runtime Environment
 - use command "java -jar jenkins.war"
 
 #### Docker
+
+[../Back to ToC](#table-of-contents)
 
 - Run Docker Command "run docker pull jenkins"
 - Expose a container, exposing it on port
@@ -57,11 +64,15 @@ You can either click the java War file or select a version to your liking from t
 
 #### Mac
 
+[../Back to ToC](#table-of-contents)
+
 Mac Users can use the outdated Mac OS App
 
 - follow instruction from [stisti on GitHub](https://github.com/stisti/jenkins-app)
 
 #### Windows
+
+[../Back to ToC](#table-of-contents)
 
 - Follow the install wizard
 
@@ -80,9 +91,13 @@ The following images represent the install wizard. no real surpises to anyone us
 
 ### first run
 
+[../Back to ToC](#table-of-contents)
+
 After Jenkins has been installed in will open default on "http://localhost:8080"
 
 ### change port
+
+[../Back to ToC](#table-of-contents)
 
 If you don't want jenkins to run on 8080 or if another service you use runs on that port you can change it:
 
@@ -94,11 +109,16 @@ If you don't want jenkins to run on 8080 or if another service you use runs on t
 
 ### next up?
 
+[../Back to ToC](#table-of-contents)
+
 You can continue [Configuring Jenkins](/docs/Config.md) and continue installing the additional software later. or continue installing the software doing the configuration later.
 
 ***
 
 ## additional software
+
+[../Back to ToC](#table-of-contents)
+
 Additionally for this bootcamp you will need Git and Java SDK. If you do not have these find the downloads below. 
 Instructions with screens are added in the [Detailed instrcutions](/docs/Install.md)
 
@@ -106,6 +126,8 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 - Java SDK can be downloaded [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ### Git
+
+[../Back to ToC](#table-of-contents)
 
 ![](/docs/images/Install/git-1.png "Logo Title Text 1")
 
@@ -157,6 +179,9 @@ Voila! uncheck View release notes because noone ever reads those.
 
 ### Java SDK
 
+[../Back to ToC](#table-of-contents)
+
+
 ![](/docs/images/Install/Java-1.png "Logo Title Text 1")
 
 Open installer
@@ -180,6 +205,8 @@ Click Close.
 
 ## github account
 
+[../Back to ToC](#table-of-contents)
+
 Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
 - Go to [Github](http://www.github.com) and create a user account.
 - go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
@@ -189,6 +216,9 @@ Since this bootcamp uses git it is mandatory to have a github account. If you al
 
 
 ### Create account
+
+[../Back to ToC](#table-of-contents)
+
 
 ![](/docs/images/Install/gh-1.png "Logo Title Text 1")
 
@@ -208,6 +238,8 @@ the actions you need to focus on are
 - Push
 
 ### Verify Account
+
+[../Back to ToC](#table-of-contents)
 
 ![](/docs/images/Install/gh-vf-1.jpg "Logo Title Text 1")
 
@@ -237,3 +269,5 @@ Watch the awesome animation :)
   - use the *.git link in your tool of liking to clone the repo locally
   - Click open in Desktop to open the source in [GitHub Desktop](https://desktop.github.com/)
   - alternatively you can use the GIT CLI and download the zip.
+
+  [Back to Top](#table-of-contents)

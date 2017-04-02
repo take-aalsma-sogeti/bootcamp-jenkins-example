@@ -12,6 +12,8 @@ click [here](../README.md) to go back to the main README.
 
 ## create compile job
 
+[../Back to ToC](#table-of-contents)
+
 Now that the code can be found on the git repository we can see if the code will compile / build and see if there are no syntax errors of any kind.
 
 Go back to your Jenkins Dashboard if not already there.
@@ -46,6 +48,8 @@ Click on "Save".
 
 ## Run compile job
 
+[../Back to ToC](#table-of-contents)
+
 Again we have to run this job. We can go back to the Jenkins Dashboard and schedule it immediately 
 or we can click the "Build Now" Option after saving the previous steps.
 
@@ -54,6 +58,8 @@ or we can click the "Build Now" Option after saving the previous steps.
 Please have a look at the results.. and see if anything went wrong.
 
 ## Fix Syntax
+
+[../Back to ToC](#table-of-contents)
 
 ![alt text](/docs/images/Step2/Step2-5.png "Logo Title Text 1")
 
@@ -78,6 +84,8 @@ Ask help from one of the instructors if you need
 If you can't wait for help or can't figure out what went wrong you can follow the alternative Path
 
 ### Alternative Path
+
+[../Back to ToC](#table-of-contents)
 
 
 Alternatively you can change the branch in the job to one where we fixed the code for you
@@ -106,11 +114,4 @@ Cloudy weather means some executions were unsuccessful.
 Thunderstorms means most of the past runs were unsuccessful.
 
 
-
-
-
-
-
-
-
-
+[Back to top](#table-of-contents)
