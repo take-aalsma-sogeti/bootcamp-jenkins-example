@@ -30,7 +30,7 @@ In this Chapter we will discuss the following topics:
 
 - Installation of Jenkins
 - additional Software needed for the bootcamp
-- set up a GitHub account.
+- set up a GitHub account and fork the bootcamp example
 
 Note that we only discuss the windows versions of the software here
 
@@ -50,10 +50,20 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 - Java SDK can be downloaded [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## github account
-Since this bootcamp uses git it is mandatory to have a github account.
-- Go to [Github](www.github.com) and create a user account.
+Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
+- Go to [Github](http://www.github.com) and create a user account.
 - go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
 - Fork the repository into your own account.
+- clone the repo locally
+
+if you're unsure how to use GitHub it is advised to do the [Hello World](https://guides.github.com/activities/hello-world/) course. Or [check out the video guides](https://www.youtube.com/githubguides)
+the actions you need to focus on are
+- Fork
+- Clone
+- Commit
+- Push
+
+or ask one of the instructors to help out
 
 # of we moeten iets kunnen met local git repos. is mij niet geluk. Heb daarom een instructie toegevoegd om te forken.
 

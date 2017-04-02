@@ -21,9 +21,7 @@ In this Chapter we will discuss the following topics:
 
 - Installation of Jenkins
 - additional Software needed for the bootcamp
-- set up a GitHub account.
-
-Note that we only discuss the windows versions of the software here
+- set up a GitHub account and fork the bootcamp example
 
 ## Jenkins
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
@@ -32,7 +30,11 @@ We will be using the LTS version (2.46.1)
 
 ![](/docs/images/Install/install-0.png "Download LTS")
 
+From the main website click "Download Jenkins"
+
 ![](/docs/images/Install/install-00.png "Choose Version")
+
+You can either click the java War file or select a version to your liking from the dropdown menu.
 
 
 ### install instructions
@@ -101,49 +103,132 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 ### Git
 
 ![](/docs/images/Install/git-1.png "Logo Title Text 1")
+
+open the installer and accept the terms and agreements
+
 ![](/docs/images/Install/git-2.png "Logo Title Text 1")
-![](/docs/images/Install/git-3.png "Logo Title Text 1")   
+
+Choose a path to install (make a note of this path for configuration later)
+
+![](/docs/images/Install/git-3.png "Logo Title Text 1")
+
+These are the default option. Change to your liking
+
 ![](/docs/images/Install/git-4.png "Logo Title Text 1")
+
+Default "Git" change if you want so.
+
 ![](/docs/images/Install/git-5.png "Logo Title Text 1")
+
+This is the default option. First option can also be used if you don't using CLI only.
+
 ![](/docs/images/Install/git-6.png "Logo Title Text 1")
+
+Use OpenSSH
+
 ![](/docs/images/Install/git-7.png "Logo Title Text 1")
+
+Use OpenSSL
+
 ![](/docs/images/Install/git-8.png "Logo Title Text 1")
+
+For windows users select the top option.
+
 ![](/docs/images/Install/git-9.png "Logo Title Text 1")
+
+Use MinTTY
+
 ![](/docs/images/Install/git-10.png "Logo Title Text 1")
+
+Select top two options and click "Install"
+
 ![](/docs/images/Install/git-11.png "Logo Title Text 1")
+
+Grab a sip of your coffee. Maybe two... no more though... we don't want you tweaking out on caffeine ^_^
+
 ![](/docs/images/Install/git-12.png "Logo Title Text 1")
+
+Voila! uncheck View release notes because noone ever reads those.
 
 ### Java SDK
 
 ![](/docs/images/Install/Java-1.png "Logo Title Text 1")
+
+Open installer
+
 ![](/docs/images/Install/Java-2.png "Logo Title Text 1")
+
+Click Next
+
 ![](/docs/images/Install/Java-3.png "Logo Title Text 1")
+
+Select all features to be installed (default). Change path if you want. 
+Make a note of the install [path for configuration later]
+
 ![](/docs/images/Install/Java-4.png "Logo Title Text 1")
+
+Blindfold yourself (can these add be any bigger....!)
+
 ![](/docs/images/Install/Java-5.png "Logo Title Text 1")
 
+Click Close.
+
 ## github account
+
 Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
 - Go to [Github](http://www.github.com) and create a user account.
 - go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
 - Fork the repository into your own account.
-- if you're unsure how to use GitHub it is advised to do the [Hello World](https://guides.github.com/activities/hello-world/) course. Or [check out the video guides](https://www.youtube.com/githubguides)
-- the actions you need to focus on are
-  - Fork
-  - Clone
-  - Commit
-  - Push
+- clone the repo locally
+
+
+
+### Create account
 
 ![](/docs/images/Install/gh-1.png "Logo Title Text 1")
+
+Choose a username, fill in your E-mal address and choose a password
+
 ![](/docs/images/Install/gh-2.png "Logo Title Text 1")
+
+Choose the free plan.
+
 ![](/docs/images/Install/gh-3.png "Logo Title Text 1")
 
+if you're unsure how to use GitHub it is advised to do the [Hello World](https://guides.github.com/activities/hello-world/) course. Or [check out the video guides](https://www.youtube.com/githubguides)
+the actions you need to focus on are
+- Fork
+- Clone
+- Commit
+- Push
 
-Now go and verify your e-mail address.
+### Verify Account
 
 ![](/docs/images/Install/gh-vf-1.jpg "Logo Title Text 1")
+
+Open your email and click the verify link
+
 ![](/docs/images/Install/gh-vf-2.jpg "Logo Title Text 1")
+
+Sign in with yournew credenmtials
+
 ![](/docs/images/Install/gh-vf-3.jpg "Logo Title Text 1")
 
+Enjoy GitHub
+
 ![](/docs/images/Install/gh-4.png "Logo Title Text 1")
+
+go to https://github.com/jeroenschepens/bootcamp-jenkins-example
+Click "Fork"
+
 ![](/docs/images/Install/gh-5.png "Logo Title Text 1")
+
+Watch the awesome animation :)
+
 ![](/docs/images/Install/gh-6.png "Logo Title Text 1")
+
+- Click the Dropdown menu
+- Use the copy button to get the *.git link used in jenkins later (https://github.com/__username__/bootcamp-jenkins-example.git)
+  - use the *.git link in your tool of liking to clone the repo locally
+  - Click open in Desktop to open the source in [GitHub Desktop](https://desktop.github.com/)
+  - alternatively you can use the GIT CLI and download the zip.
