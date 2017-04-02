@@ -18,6 +18,8 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 - [Step 6 - Advanced Usage (DSL)](#step-6---advanced-usage-dsl)
 - [additional tutorials on Jenkins](#-additional-tutorials-on-Jenkins)
 
+***
+
 # Jenkins installation
 
 [../Back to ToC](#Table-of-Contents)
@@ -67,23 +69,65 @@ or ask one of the instructors to help out
 
 # of we moeten iets kunnen met local git repos. is mij niet geluk. Heb daarom een instructie toegevoegd om te forken.
 
+***
+
 # Jenkins Configuration
 
 [../Back to ToC](#Table-of-Contents)
 
 For configuration instruction including images (Windows) click [here](/docs/Config.md)
 
-When the wizard completes Jenkins will 
+After Jenkins has been installed in will open default on "http://localhost:8080"
 
-# AANVULLEN!
+## Unlock Jenkins
 
-Additional configuration
+Upon first run Jenkins will be locked and you will need to unlock it.
 
-Git:
+The gui will present you with a path and file you need to open.
 
-Java:
+In this file you will find a token string which needs to be copied into the Jenkins GUI.
 
-Maven:
+Go with the suggested plugins and create a user
+
+## additional plugins
+
+In order to complete the bootcamp additional plugins are needed. Install the "Job DSL" plugin.
+after that restart Jenkins
+
+## Jenkins config
+
+In global Tool configuration configure the following options
+
+### Git
+
+Name: Git
+Path: __PathWhereYouInstalledGit__\git.exe (or find the path if you are using a nin-windows OS)
+
+### Java
+
+Name: Java SDK
+JAVA_HOME: __PathWhereYouInstalledGit__ (don't include any libraries. Just the path is fine.)
+
+### Maven
+
+Name: M3
+Check Install Automatically
+Version 3.3.9
+
+
+## Optional Configuration
+
+### Change Port
+
+If you don't want jenkins to run on 8080 or if another service you use runs on that port you can change it:
+
+- find Jenkins.xml (in the install directory you choose in the wizard)
+- search for "--httpPort=8080".
+- replace 8080 with the desired port number
+- restart jenkins (http://localhost:8080/safeRestart)
+- alternatively you can start java on another port using "java -jar jenkins.war -httpPort=8081" (or any other port)
+
+***
 
 # Step 1 - Create Checkout Job
 
@@ -110,7 +154,7 @@ Now we want to test our job. so we start it manually.
 - Look at the icon on the left for the status. We see that it is Blue which indicates a successful execution.
 - If you are interested in the details of the job execution you can click on the "#1" (or any other number) to see the details.
 
-
+***
 
 # Step 2 - Create Compile Job
 
@@ -149,6 +193,7 @@ Cloudy weather means some executions were unsuccessful.
 Thunderstorms means most of the past runs were unsuccessful.
 # Note for team!!!!! can someone confirm what i wrote on the weather???
 
+***
 
 # Step 3 - Create Unit Test Job
 
@@ -176,6 +221,8 @@ Re-run the job and take a look at the outcome.
 
 # hier gebleven!!!
 
+***
+
 # Step 4 - Create Deployment Job
 
 [../Back to ToC](#Table-of-Contents)
@@ -184,6 +231,8 @@ For detailed instruction including images click [here](/docs/Step4.md)
 
 Since we can't actually deploy our test application we have chosen to simulate this step by creating a notification step instead.
 
+***
+
 # Step 5 - Create pipeline with all jobs
 
 [../Back to ToC](#Table-of-Contents)
@@ -191,6 +240,8 @@ Since we can't actually deploy our test application we have chosen to simulate t
 For detailed instruction including images click [here](/docs/Step5.md)
 
 No Content Yet
+
+***
 
 # Step 6 - Advanced Usage (DSL)
 
@@ -201,6 +252,8 @@ For detailed instruction including images click [here](/docs/Step6.md)
 No Content Yet.
 
 more info on using Job DSL can be found [here](https://jenkinsci.github.io/job-dsl-plugin/)
+
+***
 
 # additional tutorials on Jenkins
 

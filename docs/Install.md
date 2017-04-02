@@ -15,6 +15,8 @@ click [here](../README.md) to go back to the main README.
   - [Java SDK](#java-sdk)
   - [GitHub Account](#github-account)
 
+***
+
 It would be silly to let you do a Jenkins Bootcamp without the software we are going to use mainly... Below are instructions to download Jenkins, additional software and to set up your GitHub Account.
 
 In this Chapter we will discuss the following topics:
@@ -22,6 +24,8 @@ In this Chapter we will discuss the following topics:
 - Installation of Jenkins
 - additional Software needed for the bootcamp
 - set up a GitHub account and fork the bootcamp example
+
+***
 
 ## Jenkins
 Jenkins Can be downloaded from [Jenkins.io](http://www.Jenkins.io)
@@ -74,7 +78,7 @@ The following images represent the install wizard. no real surpises to anyone us
 ![](/docs/images/Install/install-5.png "Finished")
 
 
-## first run
+### first run
 
 After Jenkins has been installed in will open default on "http://localhost:8080"
 
@@ -92,6 +96,7 @@ If you don't want jenkins to run on 8080 or if another service you use runs on t
 
 You can continue [Configuring Jenkins](/docs/Config.md) and continue installing the additional software later. or continue installing the software doing the configuration later.
 
+***
 
 ## additional software
 Additionally for this bootcamp you will need Git and Java SDK. If you do not have these find the downloads below. 
