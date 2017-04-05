@@ -160,7 +160,7 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Check that Branch specifies "*/Master"
 - Click on "Save".
 
-# willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
+Note that if the repository URL is not entered correctly, Jenkins will show red text indicating it could not reach the URL along with an error description.
 
 Now we want to test our job. so we start it manually.
 
