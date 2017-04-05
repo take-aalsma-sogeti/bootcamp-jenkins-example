@@ -74,11 +74,9 @@ instead of committing and pushing the changes into a forked reporsitory you can 
 However instead of the repository url shown in the guide you will need to change the repository url to a local variant.
 
 Windows:
-
 ```
 file://D:\home\rbkcbeqc\dev\git\gitsandbox
 ```
-
 Nix:
 ```
 file:///home/rbkcbeqc/dev/git/gitsandbox
