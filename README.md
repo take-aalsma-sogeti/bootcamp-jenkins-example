@@ -200,14 +200,14 @@ Can you find out what went wrong with the code and why it did not build? Go and 
 
 Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step2".
 Re-run the job and take a look at the outcome.
-# retest after pull request.
 
-Note on the jenkins Dashboard: 
-Note that we can also see a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
+Note on the jenkins Dashboard & the Weather Icon: 
+
+The Weather icon indicates how the past couple of runs have been executed:
+
 Sunny weather means nothing went wrong. 
 Cloudy weather means some executions were unsuccessful. 
 Thunderstorms means most of the past runs were unsuccessful.
-# Note for team!!!!! can someone confirm what i wrote on the weather???
 
 ***
 
