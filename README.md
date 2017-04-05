@@ -67,7 +67,24 @@ the actions you need to focus on are
 
 or ask one of the instructors to help out
 
-# of we moeten iets kunnen met local git repos. is mij niet geluk. Heb daarom een instructie toegevoegd om te forken.
+### Local repo instead of remote repo
+
+instead of committing and pushing the changes into a forked reporsitory you can also choose just to clone the repo locally.
+
+However instead of the repository url shown in the guide you will need to change the repository url to a local variant.
+
+Windows:
+
+```
+file://D:\home\rbkcbeqc\dev\git\gitsandbox
+```
+
+Nix:
+```
+file:///home/rbkcbeqc/dev/git/gitsandbox
+``` 
+
+Ofcourse these need to be replaced by your actual cloned local repo.
 
 ***
 
