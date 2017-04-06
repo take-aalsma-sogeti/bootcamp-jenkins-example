@@ -410,16 +410,19 @@ to read in the file follow these steps:
 - Make sure you use your own username
 - Check that Branch specifies "*/Master"
 - Go to "Build" and select "ADD BUILD STEP". Choose "Proces Job DSLs". 
-- Select "Use the provided DSL Script"
+- Select "Look on Filesystem" and enter dsl.groovy
 - click "Save"
-- Run the job
+- take a look at your current Dashboard
+- Run the job and watch in awe
+- look at your Dashboard after the run
 
 
-__So to resume our Bootcamp:__
 
-1. Start using Jenkins
-2. ?
-3. Profit
+## So to summarize our Bootcamp:
+
+1. __Start using Jenkins__
+2. __?__
+3. __Profit__
 
 So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start using this at our customers or in your personal projects!
 

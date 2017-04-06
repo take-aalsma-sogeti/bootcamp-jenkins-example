@@ -31,30 +31,39 @@ to read in the file follow these steps:
 
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter "DSL File” as the item name and choose "Freestyle Project"
+
+![alt text](/docs/images/Step6/Step6-1.png "Logo Title Text 1")
+
 - Go to "Source code management" and select "Git". 
 - Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
 - Make sure you use your own username
 - Check that Branch specifies "*/Master"
 - Go to "Build" and select "ADD BUILD STEP". Choose "Proces Job DSLs". 
-- Select "Use the provided DSL Script"
+
+![alt text](/docs/images/Step6/Step6-3.png "Logo Title Text 1")
+
+- Select "Look on Filesystem" and enter dsl.groovy
 - click "Save"
-- Run the job
+- take a look at your current Dashboard
+
+![alt text](/docs/images/Step6/Step6-4.png "Logo Title Text 1")
+
+- Run the job and watch in awe
+
+![alt text](/docs/images/Step6/Step6-5.png "Logo Title Text 1")
+
+- look at your Dashboard after the run
+
+![alt text](/docs/images/Step6/Step6-6.png "Logo Title Text 1")
 
 
-__So to resume our Bootcamp:__
+## So to summarize our Bootcamp:
 
-1. Start using Jenkins
-2. ?
-3. Profit
+1. __Start using Jenkins__
+2. __?__
+3. __Profit__
 
 So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start using this at our customers or in your personal projects!
-
-![alt text](/docs/images/Step6/Step6-1.png "Logo Title Text 1")
-![alt text](/docs/images/Step6/Step6-2.png "Logo Title Text 1")
-![alt text](/docs/images/Step6/Step6-3.png "Logo Title Text 1")
-![alt text](/docs/images/Step6/Step6-4.png "Logo Title Text 1")
-![alt text](/docs/images/Step6/Step6-5.png "Logo Title Text 1")
-![alt text](/docs/images/Step6/Step6-6.png "Logo Title Text 1")
 
 ***
 [Back to top](#table-of-contents)
