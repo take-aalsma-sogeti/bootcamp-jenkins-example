@@ -1,4 +1,6 @@
-pipeline {
+#!groovy
+
+node{
  
     agent any
     
