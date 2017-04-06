@@ -328,6 +328,8 @@ In order for the trigger to work we need to reconfigure our "Code Checkout" Job
 
 A better way to trigger this job is to listen to Git Commits done when Git pushes the Git Command. This Requires the Git Plugin version 1.1.14 and an alteration to your local git. [Use this guide](http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/) to set it up. Use at your own risk!
 
+Try your new trigger by pushing code to the remote repository and see if the "Code Checkout" job starts.
+
 ### Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
 
 We will configure this during the construction of our Pipeline.
@@ -354,15 +356,24 @@ We are going to create our first "Hello Pipeline" Pipeline.
 - Go to "New item". Enter “Manual Pipeline” as the item name and choose "Pipeline"
 - in The Build Triggers tab check "Build after other projects are built" and choose "Code Checkout"
 - in the Pipeline tab under Definition select "Pipeline Script"
-- write code to create a pipeline with 4 stages with each one step using the "build job:'name'" command.
-
+- write code to create a pipeline with the 3 remaining stages (steps) with each one step using the "build job:'name'" command.
 - click "Save"
 
 need help creating pipeline syntax?
 
 either click on pipeline syntax in the configure screen or check this link: http://localhost:8080/job/Manual%20Pipeline/pipeline-syntax/
 
+Push a change to your Remote repo to fire off the "Code Checkout" job which will start the pipeline for the remaining
 
+go to the pipeline and select "Stage view" to get a visual representation of the view.
+
+to further automate the building process specific to the code you want to automate we may want to run different jobs or in a different order.
+
+- The code you have written could be saved in a "Jenkinsfile" and stored along with the rest of the code
+- to use this script in the pipeline select "pipeline script from SCM" in the pipeline
+- add the git remote repository
+- Select the appropriate branch
+- In path leave the setting to Jenkinsfile to search the root of the repository 
 
 ***
 
