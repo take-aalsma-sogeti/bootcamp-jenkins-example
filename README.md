@@ -16,7 +16,7 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 - [Step 4 - Create Deployment Job](#step-4---create-deployment-job)
 - [Step 5 - Create pipeline with all jobs](#step-5---create-pipeline-with-all-jobs)
 - [Step 6 - Advanced Usage (DSL)](#step-6---advanced-usage-dsl)
-- [additional tutorials on Jenkins](#-additional-tutorials-on-Jenkins)
+- [additional tutorials on Jenkins](#-additional-tutorials-on-jenkins)
 
 ***
 

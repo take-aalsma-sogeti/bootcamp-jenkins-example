@@ -70,6 +70,8 @@ Use SSL: Yes
 Port: 465
 ```
 
+After configuring you can let Jenkins send a test mail. Please do so to test the configuration
+
 ### Two-Factor Authentication
 
 [Two-factor auth](http://stackoverflow.com/questions/26736062/sending-email-fails-when-two-factor-authentication-is-on-for-gmail) requires a different approach.
