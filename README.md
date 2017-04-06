@@ -255,7 +255,9 @@ Since we can't actually deploy our test application we have chosen to simulate t
 
 For detailed instruction including images click [here](/docs/Step5.md)
 
-No Content Yet
+need help creating pipeline syntax?
+
+either click on pipeline syntax or check this link: http://localhost:8080/job/__yourPipeline__/pipeline-syntax/
 
 ***
 
