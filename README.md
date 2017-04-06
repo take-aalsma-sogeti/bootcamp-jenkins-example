@@ -265,6 +265,7 @@ Probably not because we did not configure our e-mail settings in Jenkins.
 - Go back to your Jenkins Dashboard if not already there.
 - Go to the Jenkins configuration 
 - configure the email settings. A good source for this is the gmail SMTP
+- After configuring you can let Jenkins send a test mail. Please do so to test the configuration
 
 
 The following settings can be used
