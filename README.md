@@ -416,6 +416,13 @@ to read in the file follow these steps:
 - .......
 - Profit
 
+So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start using this at our customers or in your personal projects!
+
+If you are interested feel free to fiddle around with Jenkins for the remaining time of the bootcamp or check out the additional resources mentioned below.
+
+# ik had verwacht dat hij met het aftrappen van de DSL ook meteen de pipeline zou starten. Hij heeft alleen maar jobs aangemaakt. Klopt Dit?
+
+# het valt me op dat Jenkins niets lijkt te doen met re-usability van Artifacts etc. Zit dat er in? bijv. één keer een git repo uitchecken en die dan gebruiken in je build stap. Dat dan weer gebruiken in je test etc. Nu gebeuren alle stappen in iedere job overnieuw.
 
 ***
 

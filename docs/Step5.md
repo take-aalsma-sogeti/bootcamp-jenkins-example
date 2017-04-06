@@ -140,13 +140,7 @@ If you are having troubles getting your Jenkinsfile working you can point the SC
 
 Have a look at that super shiny awesome looking pipeline you just created. yes.... you may pat yourself on the back ^^
 
+***
+[Back to top](#table-of-contents)
 
-
-
-
-
-
-
-
-
-
+click [here](../README.md#table-of-contents) to go back to the main README. 
