@@ -4,14 +4,8 @@ click [here](../README.md) to go back to the main README.
 
 # Table of Contents
 - [Introduction](#introduction)
-- [Build Triggers (or Scheduling)](#run-deployment-job)
-  - [Upstream Trigger on Git to start the "Checkout Code" Job]()
-  - [Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished]()
-- [Manual Pipeline](#configure-mail)
-- [Jenkinsfile Pipeline](#configure-mail)
-
-  - [Gmail Two Factor Authentication](#two--factor-authentication)
-- [Re-run Job](#rerun-job)
+- [Proces DSL Script](#proces-dsl-script)
+- [Summary](#summary)
 
 ***
 
@@ -25,7 +19,7 @@ The keen eye may have noticed a dsl.groovy file in the source code repository an
 
 Furthermore we would like to invite you to read this file into Jenkins and play with it. make changes, commit and experiment.
 
-Proces DSL Script
+# Proces DSL Script
 
 to read in the file follow these steps:
 
@@ -56,6 +50,8 @@ to read in the file follow these steps:
 
 ![alt text](/docs/images/Step6/Step6-6.png "Logo Title Text 1")
 
+
+# Summary
 
 ## So to summarize our Bootcamp:
 
