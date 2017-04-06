@@ -1,14 +1,29 @@
-#!groovy
-
-node('master') {
- stage 'Checkout'
- checkout scm
-
- def mvnHome = tool 'M3'
-
- stage 'Compile'
- sh "${mvnHome}/bin/mvn clean compile"
-
- stage 'Test'
- sh "${mvnHome}/bin/mvn clean test"
+pipeline {
+ 
+    agent any
+    
+    stages{
+        
+        stage('Compile'){
+            steps {
+                //this is a comment
+                echo 'Compiling ...'
+                build job:'Compile Code'
+            }
+        }
+        
+        stage('Test'){
+            steps{
+                echo 'Testing...'
+                build job:'Test'
+            }
+        stage('Deploy'){
+            steps{
+                echo 'Deploying...'
+                build job:'Deploy'
+            }
+        }
+        
+    }
+    
 }
