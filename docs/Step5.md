@@ -52,10 +52,15 @@ In order for the trigger to work we need to reconfigure our "Code Checkout" Job
 
 - Open the "Code Checkout" Job
 - Go to the tab "Build triggers"
+
+![alt text](/docs/images/Step5/Step5-bt-1.png "Logo Title Text 1")
+
 - Select "Poll SCM" and Enter "* * * * *" as Value. This will poll SCM every minute. If you want a different value use another [CRON Expression](https://en.wikipedia.org/wiki/Cron)
 - Click "Save"
 
 A better way to trigger this job is to listen to Git Commits done when Git pushes the Git Command. This Requires the Git Plugin version 1.1.14 and an alteration to your local git. [Use this guide](http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/) to set it up. Use at your own risk!
+
+![alt text](/docs/images/Step5/Step5-bt-2.png "Logo Title Text 1")
 
 Try your new trigger by pushing code to the remote repository and see if the "Code Checkout" job starts.
 
@@ -85,8 +90,21 @@ We are going to create our first "Manual Pipeline" Pipeline.
 
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Manual Pipeline” as the item name and choose "Pipeline"
+
+![alt text](/docs/images/Step5/Step5-1.png "Logo Title Text 1")
+
+![alt text](/docs/images/Step5/Step5-2.png "Logo Title Text 1")
+
 - in The Build Triggers tab check "Build after other projects are built" and choose "Code Checkout"
+
+![alt text](/docs/images/Step5/Step5-3.png "Logo Title Text 1")
+
+You can play with the check marks to see the difference.
+
 - in the Pipeline tab under Definition select "Pipeline Script"
+
+![alt text](/docs/images/Step5/Step5-4.png "Logo Title Text 1")
+
 - write code to create a pipeline with the 3 remaining stages (steps) with each one step using the "build job:'name'" command.
 - click "Save"
 
@@ -98,6 +116,9 @@ Push a change to your Remote repo to fire off the "Code Checkout" job which will
 
 go to the pipeline and select "Stage view" to get a visual representation of the view.
 
+![alt text](/docs/images/Step5/Step5-5.png "Logo Title Text 1")
+
+
 # Jenkinsfile Pipeline
 
 to further automate the building process specific to the code you want to automate we may want to run different jobs or in a different order.
@@ -106,21 +127,26 @@ to further automate the building process specific to the code you want to automa
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter "Jenkinsfile Pipeline” as the item name and choose "Pipeline"
 - to use this script in the pipeline select "pipeline script from SCM" in the pipeline
+
+![alt text](/docs/images/Step5/Step5-jf-1.png "Logo Title Text 1")
+
 - add the git remote repository
 - Select the appropriate branch
 - In path leave the setting to Jenkinsfile to search the root of the repository
 
 If you are having troubles getting your Jenkinsfile working you can point the SCM to "*/step5"
 
+![alt text](/docs/images/Step5/Step5-jf-2.png "Logo Title Text 1")
+
 Have a look at that super shiny awesome looking pipeline you just created. yes.... you may pat yourself on the back ^^
 
-![alt text](/docs/images/Step5/Step5-1.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-2.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-3.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-4.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-5.png "Logo Title Text 1")
 
-![alt text](/docs/images/Step5/Step5-bt-1.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-bt-2.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-jf-1.png "Logo Title Text 1")
-![alt text](/docs/images/Step5/Step5-jf-2.png "Logo Title Text 1")
+
+
+
+
+
+
+
+
+
