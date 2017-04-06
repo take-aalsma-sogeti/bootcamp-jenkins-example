@@ -233,9 +233,6 @@ Take a look at the outcome and the console output for the job. Try and fix the e
 
 Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step3".
 Re-run the job and take a look at the outcome.
-# retest after pull request.
-
-# hier gebleven!!!
 
 ***
 
@@ -300,13 +297,18 @@ Here we get to the nitty gritty of things. In the past 4 steps we created the se
 
 As Jenkins is an Automation tool after all we would like to proces all these job at once, preferably when new code is committed to the repository or in Daily / Nightly builds.
 
-In jenkins this is done in the Groovy language and stored in a __Jenkinsfile__ which is to be stored in the code repository so it can be used upon code checkout
-
 ## Build Triggers (or Scheduling)
 
 Build Triggers are important in automation because they initiate the first step in kicking off a chain of jobs or a pipeline.
 
-In our test case we will build two triggers:
+In jenkins there are three types of triggers:
+
+- Build Trigger -> available in a Job / pipeline to specify when the build step should start
+- Post Build Actions -> Avaliable in a Job only and specifies a follow-up action after build has taken place (see Step4).
+
+# kan iemand dit controleren???
+
+In our bootcamp we will build two triggers:
 
 - Upstream Trigger on Git to start the "Checkout Code" Job
 - Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
@@ -317,18 +319,50 @@ __note on terminology: Upstream is when a project / Pipeline executes a separate
 
 ### Upstream Trigger on Git to start the "Checkout Code" Job
 
+In order for the trigger to work we need to reconfigure our "Code Checkout" Job
+
+- Open the "Code Checkout" Job
+- Go to the tab "Build triggers"
+- Select "Poll SCM" and Enter "* * * * *" as Value. This will poll SCM every minute. If you want a different value use another [CRON Expression](https://en.wikipedia.org/wiki/Cron)
+- Click "Save"
+
+A better way to trigger this job is to listen to Git Commits done when Git pushes the Git Command. This Requires the Git Plugin version 1.1.14 and an alteration to your local git. [Use this guide](http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/) to set it up. Use at your own risk!
+
+### Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
+
+We will configure this during the construction of our Pipeline.
+
 ## Pipeline
+
+Constructing Pipelines in jenkins is done in the Groovy language and stored in a __Jenkinsfile__ which is to be stored in the code repository so it can be used upon code checkout.
+
+A jenkinsfile will follow a set of instructions to configure Stages, Steps, Parameters etc.
+
+The jenkinsfile starts with a __pipeline{}__ command along with the specification of a specific or any agent.
 
 ```
 pipeline {
+    agent any
 
 }
 ``` 
+Within this syntax follow various __stages{}__ , __stage('name'){}__  and __steps{}__ commands to specify what needs to be done in the pipeline.
 
+We are going to create our first "Hello Pipeline" Pipeline.
+
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter “Manual Pipeline” as the item name and choose "Pipeline"
+- in The Build Triggers tab check "Build after other projects are built" and choose "Code Checkout"
+- in the Pipeline tab under Definition select "Pipeline Script"
+- write code to create a pipeline with 4 stages with each one step using the "build job:'name'" command.
+
+- click "Save"
 
 need help creating pipeline syntax?
 
-either click on pipeline syntax or check this link: http://localhost:8080/job/__yourPipeline__/pipeline-syntax/
+either click on pipeline syntax in the configure screen or check this link: http://localhost:8080/job/Manual%20Pipeline/pipeline-syntax/
+
+
 
 ***
 
