@@ -247,6 +247,39 @@ For detailed instruction including images click [here](/docs/Step4.md)
 
 Since we can't actually deploy our test application we have chosen to simulate this step by creating a notification step instead.
 
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter “Deploy” as the item name and choose "Freestyle project"
+- Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
+- Make sure you use your own username
+- Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
+- Enter "clean build" in the "Goals" field.
+- go to the "Post-build actions" tab enter your own mail address or "bootcamp2017-jenkins@mailinator.com" into the mail address
+- Click on "Save".
+
+- Run the project and take a look at your mail address or https://www.mailinator.com/inbox2.jsp?public_to=bootcamp2017-jenkins to see if the step succeeded. 
+
+Probably not because we did not configure our e-mail settings in Jenkins.
+
+- Go back to your Jenkins Dashboard if not already there.
+- Go to the Jenkins configuration 
+- configure the email settings. A good source for this is the gmail SMTP
+- additionally you can check either boxes to have individual mails sent (not configured) or to send a mail upon broken builds 
+
+The following settings can be used
+
+```
+SMTP Server: SMTP.gmail.com
+Use SMTP Auth: Yes
+Username: full gmail address
+password: ************
+Use SSL: Yes
+Port: 465
+```
+
+[Two-factor auth](http://stackoverflow.com/questions/26736062/sending-email-fails-when-two-factor-authentication-is-on-for-gmail) requires a different approach.
+
+Try the job several times working or not working and behold the notifications (spam) coming in.
+
 ***
 
 # Step 5 - Create pipeline with all jobs
@@ -254,6 +287,14 @@ Since we can't actually deploy our test application we have chosen to simulate t
 [../Back to ToC](#table-of-contents)
 
 For detailed instruction including images click [here](/docs/Step5.md)
+
+
+```
+pipeline {
+
+}
+``` 
+
 
 need help creating pipeline syntax?
 
