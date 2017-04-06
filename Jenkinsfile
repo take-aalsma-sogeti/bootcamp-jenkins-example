@@ -1,14 +1,14 @@
 #!groovy
 
-node('master') {
- stage 'Checkout'
- checkout scm
+pipeline{
 
- def mvnHome = tool 'M3'
+    agent any
 
- stage 'Compile'
- sh "${mvnHome}/bin/mvn clean compile"
+    stages{
+        stage('Stage'){
+            steps{
 
- stage 'Test'
- sh "${mvnHome}/bin/mvn clean test"
+            }
+        }
+    }
 }
