@@ -334,7 +334,7 @@ Try your new trigger by pushing code to the remote repository and see if the "Co
 
 We will configure this during the construction of our Pipeline.
 
-## Pipeline
+## Manual Pipeline
 
 Constructing Pipelines in jenkins is done in the Groovy language and stored in a __Jenkinsfile__ which is to be stored in the code repository so it can be used upon code checkout.
 
@@ -343,6 +343,8 @@ A jenkinsfile will follow a set of instructions to configure Stages, Steps, Para
 The jenkinsfile starts with a __pipeline{}__ command along with the specification of a specific or any agent.
 
 ```
+#!groovy
+
 pipeline {
     agent any
 
@@ -350,7 +352,7 @@ pipeline {
 ``` 
 Within this syntax follow various __stages{}__ , __stage('name'){}__  and __steps{}__ commands to specify what needs to be done in the pipeline.
 
-We are going to create our first "Hello Pipeline" Pipeline.
+We are going to create our first "Manual Pipeline" Pipeline.
 
 - Go back to your Jenkins Dashboard if not already there.
 - Go to "New item". Enter “Manual Pipeline” as the item name and choose "Pipeline"
@@ -366,6 +368,8 @@ either click on pipeline syntax in the configure screen or check this link: http
 Push a change to your Remote repo to fire off the "Code Checkout" job which will start the pipeline for the remaining
 
 go to the pipeline and select "Stage view" to get a visual representation of the view.
+
+## Jenkinsfile Pipeline
 
 to further automate the building process specific to the code you want to automate we may want to run different jobs or in a different order.
 
@@ -392,6 +396,8 @@ For detailed instruction including images click [here](/docs/Step6.md)
 No Content Yet.
 
 more info on using Job DSL can be found [here](https://jenkinsci.github.io/job-dsl-plugin/)
+https://marcesher.com/2016/08/04/jenkins-as-code-comparing-job-dsl-and-pipelines/
+http://stackoverflow.com/questions/37657810/job-dsl-plugin-vs-pipeline-plugin
 
 ***
 

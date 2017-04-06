@@ -6,7 +6,7 @@ click [here](../README.md) to go back to the main README.
 - [create Deployment job](#create-deployment-job)
 - [Run Deployment Job](#run-deployment-job)
 - [Configure mail](#configure-mail)
-    - [Gmail Two Factor Authentication](#two--factor-authentication)
+  - [Gmail Two Factor Authentication](#two--factor-authentication)
 - [Re-run Job](#rerun-job)
 
 ***
