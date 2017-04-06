@@ -369,11 +369,17 @@ go to the pipeline and select "Stage view" to get a visual representation of the
 
 to further automate the building process specific to the code you want to automate we may want to run different jobs or in a different order.
 
-- The code you have written could be saved in a "Jenkinsfile" and stored along with the rest of the code
+- The code you have written could be saved in a __"Jenkinsfile"__ and stored along with the rest of the code. an Empty example can be found in the Sourcecode folder.
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter "Jenkinsfile Pipeline” as the item name and choose "Pipeline"
 - to use this script in the pipeline select "pipeline script from SCM" in the pipeline
 - add the git remote repository
 - Select the appropriate branch
-- In path leave the setting to Jenkinsfile to search the root of the repository 
+- In path leave the setting to Jenkinsfile to search the root of the repository
+
+If you are having troubles getting your Jenkinsfile working you can point the SCM to "*/step5"
+
+Have a look at that super shiny awesome looking pipeline you just created. yes.... you may pat yourself on the back ^^
 
 ***
 
