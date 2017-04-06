@@ -30,7 +30,7 @@ Ok so below steps are some you have done in the previous three steps so i'll sav
 
 What is new is that we are defining a post-build action. This is a action performed after a build has taken place. This can either be successful or not. 
 
-Note: you need to have a build step definied in order for this to work.
+__Note: you need to have a build step definied in order for this to work.__
 
 go to the "Post-build actions" tab and define an email notification
 
