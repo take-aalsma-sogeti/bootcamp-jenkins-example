@@ -1,6 +1,6 @@
 #!groovy
 
-node{
+pipeline {
  
     agent any
     
@@ -19,6 +19,7 @@ node{
                 echo 'Testing...'
                 build job:'Test'
             }
+        }
         stage('Deploy'){
             steps{
                 echo 'Deploying...'
