@@ -291,6 +291,33 @@ Try the job several times working or not working and behold the notifications (s
 
 For detailed instruction including images click [here](/docs/Step5.md)
 
+In this step we are introducing two topics:
+
+- Build (job) Triggers
+- Chaining Jobs / Projects in a pipeline.
+
+Here we get to the nitty gritty of things. In the past 4 steps we created the separate jobs we use in our Continuous Integration cycle. There's one caveat thought. As a developer or ops you don't have time to start each job whenever you process a commit on your code.
+
+As Jenkins is an Automation tool after all we would like to proces all these job at once, preferably when new code is committed to the repository or in Daily / Nightly builds.
+
+In jenkins this is done in the Groovy language and stored in a __Jenkinsfile__ which is to be stored in the code repository so it can be used upon code checkout
+
+## Build Triggers (or Scheduling)
+
+Build Triggers are important in automation because they initiate the first step in kicking off a chain of jobs or a pipeline.
+
+In our test case we will build two triggers:
+
+- Upstream Trigger on Git to start the "Checkout Code" Job
+- Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
+
+__note on terminology: Upstream is when a project / Pipeline executes a separate Project / Pipeline as part of its execution whereas a Downstream trigger is the Executed Project / Pipeline from another Project / Pipeline.__
+
+#graag even nakijken of deze klopt!!
+
+### Upstream Trigger on Git to start the "Checkout Code" Job
+
+## Pipeline
 
 ```
 pipeline {
@@ -317,7 +344,7 @@ more info on using Job DSL can be found [here](https://jenkinsci.github.io/job-d
 
 ***
 
-# additional tutorials on Jenkins
+# Additional tutorials on Jenkins
 
 [../Back to ToC](#table-of-contents)
 
