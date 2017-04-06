@@ -15,6 +15,8 @@ click [here](../README.md) to go back to the main README.
 
 ***
 
+# Introduction
+
 The last chapter we are going to unleash on you is some advanced use of Jenkins. In this course we have created Jobs manually and chained them together using a pipeline. However if you want to become the new Netflix you'll have to do better than that. Netflix designed DSL as a way to automate job creation. a DSL file is also written in the groovy Language and gives you the option to parameterize your jobs and create them on the fly while also chaining them in a "pipeline".
 
 There is a lot of debate going on over [DSL vs Pipelines](http://stackoverflow.com/questions/37657810/job-dsl-plugin-vs-pipeline-plugin). because they are very much alike they can cause confusion on the [difference between DSL and Pipeline scripts](https://marcesher.com/2016/08/04/jenkins-as-code-comparing-job-dsl-and-pipelines/). You can check both links to form your own opinion on either or just check the [documentation](https://jenkinsci.github.io/job-dsl-plugin/)
@@ -22,6 +24,8 @@ There is a lot of debate going on over [DSL vs Pipelines](http://stackoverflow.c
 The keen eye may have noticed a dsl.groovy file in the source code repository and we invite you to check it out and take a look at it to see what is happening. If you want even more complex usage on these files ask a question to Wouter van Eekelen as he showed this in the example of his business line.
 
 Furthermore we would like to invite you to read this file into Jenkins and play with it. make changes, commit and experiment.
+
+Proces DSL Script
 
 to read in the file follow these steps:
 
@@ -34,11 +38,23 @@ to read in the file follow these steps:
 - Go to "Build" and select "ADD BUILD STEP". Choose "Proces Job DSLs". 
 - Select "Use the provided DSL Script"
 - click "Save"
-- ...
-- .......
-- Profit
+- Run the job
+
+
+__So to resume our Bootcamp:__
+
+1. Start using Jenkins
+2. ?
+3. Profit
 
 So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start using this at our customers or in your personal projects!
+
+![alt text](/docs/images/Step6/Step6-1.png "Logo Title Text 1")
+![alt text](/docs/images/Step6/Step6-2.png "Logo Title Text 1")
+![alt text](/docs/images/Step6/Step6-3.png "Logo Title Text 1")
+![alt text](/docs/images/Step6/Step6-4.png "Logo Title Text 1")
+![alt text](/docs/images/Step6/Step6-5.png "Logo Title Text 1")
+![alt text](/docs/images/Step6/Step6-6.png "Logo Title Text 1")
 
 ***
 [Back to top](#table-of-contents)

@@ -412,9 +412,14 @@ to read in the file follow these steps:
 - Go to "Build" and select "ADD BUILD STEP". Choose "Proces Job DSLs". 
 - Select "Use the provided DSL Script"
 - click "Save"
-- ...
-- .......
-- Profit
+- Run the job
+
+
+__So to resume our Bootcamp:__
+
+1. Start using Jenkins
+2. ?
+3. Profit
 
 So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start using this at our customers or in your personal projects!
 
