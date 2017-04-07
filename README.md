@@ -306,8 +306,7 @@ In jenkins there are three types of triggers:
 
 - Build Trigger -> available in a Job / pipeline to specify when the build step should start
 - Post Build Actions -> Avaliable in a Job only and specifies a follow-up action after build has taken place (see Step4).
-
-# kan iemand dit controleren???
+- scheduled trigger -> Available in a Job to specify an interval / schedule which the job should follow.
 
 In our bootcamp we will build two triggers:
 
@@ -315,8 +314,6 @@ In our bootcamp we will build two triggers:
 - Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
 
 __note on terminology: Upstream is when a project / Pipeline executes a separate Project / Pipeline as part of its execution whereas a Downstream trigger is the Executed Project / Pipeline from another Project / Pipeline.__
-
-#graag even nakijken of deze klopt!!
 
 ### Upstream Trigger on Git to start the "Checkout Code" Job
 
@@ -417,6 +414,13 @@ to read in the file follow these steps:
 - Run the job and watch in awe
 - look at your Dashboard after the run
 
+It looks like we created all the jobs and pipeline in one go with just one simple script. Notice how we didnt configure any triggers. These can be scripted in the DSL with the syntax __invullen__
+
+
+## Artifacts & Reusability of jobs
+
+Komt nog info van Wouter over artifacts en hoe je elementen uit de ene job kunt hergebruiken in een andere job.
+
 
 # Summary
 
@@ -431,9 +435,7 @@ So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start u
 
 If you are interested feel free to fiddle around with Jenkins for the remaining time of the bootcamp or check out the additional resources mentioned below.
 
-# ik had verwacht dat hij met het aftrappen van de DSL ook meteen de pipeline zou starten. Hij heeft alleen maar jobs aangemaakt. Klopt Dit?
 
-# het valt me op dat Jenkins niets lijkt te doen met re-usability van Artifacts etc. Zit dat er in? bijv. één keer een git repo uitchecken en die dan gebruiken in je build stap. Dat dan weer gebruiken in je test etc. Nu gebeuren alle stappen in iedere job overnieuw.
 
 ***
 
