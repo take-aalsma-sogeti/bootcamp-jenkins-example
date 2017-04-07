@@ -16,7 +16,8 @@ The advanced usage sample will teach you how to use DSL to parameterize your job
 - [Step 4 - Create Deployment Job](#step-4---create-deployment-job)
 - [Step 5 - Create pipeline with all jobs](#step-5---create-pipeline-with-all-jobs)
 - [Step 6 - Advanced Usage (DSL)](#step-6---advanced-usage-dsl)
-- [additional tutorials on Jenkins](#-additional-tutorials-on-Jenkins)
+- [Summary](#summary)
+- [additional tutorials on Jenkins](#-additional-tutorials-on-jenkins)
 
 ***
 
@@ -67,7 +68,22 @@ the actions you need to focus on are
 
 or ask one of the instructors to help out
 
-# of we moeten iets kunnen met local git repos. is mij niet geluk. Heb daarom een instructie toegevoegd om te forken.
+### Local repo instead of remote repo
+
+instead of committing and pushing the changes into a forked reporsitory you can also choose just to clone the repo locally.
+
+However instead of the repository url shown in the guide you will need to change the repository url to a local variant.
+
+Windows:
+```
+file://D:\home\rbkcbeqc\dev\git\gitsandbox
+```
+Nix:
+```
+file:///home/rbkcbeqc/dev/git/gitsandbox
+``` 
+
+Ofcourse these need to be replaced by your actual cloned local repo.
 
 ***
 
@@ -145,7 +161,7 @@ One of the first tasks in our automation process is to retrieve the code from ve
 - Check that Branch specifies "*/Master"
 - Click on "Save".
 
-# willen we hier nog iets doen met verschillende branches? e.g. een foute branch laten invullen zodat hij failed?
+Note that if the repository URL is not entered correctly, Jenkins will show red text indicating it could not reach the URL along with an error description.
 
 Now we want to test our job. so we start it manually.
 
@@ -185,14 +201,14 @@ Can you find out what went wrong with the code and why it did not build? Go and 
 
 Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step2".
 Re-run the job and take a look at the outcome.
-# retest after pull request.
 
-Note on the jenkins Dashboard: 
-Note that we can also see a Weather icon in the Jenkins Dashboard. This indicates how the past couple of runs have been executed. 
+Note on the jenkins Dashboard & the Weather Icon: 
+
+The Weather icon indicates how the past couple of runs have been executed:
+
 Sunny weather means nothing went wrong. 
 Cloudy weather means some executions were unsuccessful. 
 Thunderstorms means most of the past runs were unsuccessful.
-# Note for team!!!!! can someone confirm what i wrote on the weather???
 
 ***
 
@@ -218,9 +234,6 @@ Take a look at the outcome and the console output for the job. Try and fix the e
 
 Alternatively you can change the branch in the job in the "Source Code management" tab to "*/step3".
 Re-run the job and take a look at the outcome.
-# retest after pull request.
-
-# hier gebleven!!!
 
 ***
 
@@ -232,6 +245,42 @@ For detailed instruction including images click [here](/docs/Step4.md)
 
 Since we can't actually deploy our test application we have chosen to simulate this step by creating a notification step instead.
 
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter “Deploy” as the item name and choose "Freestyle project"
+- Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
+- Make sure you use your own username
+- Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
+- Enter "clean build" in the "Goals" field.
+- go to the "Post-build actions" tab and define an email notification
+- enter your own mail address or "bootcamp2017-jenkins@mailinator.com" into the mail address
+- additionally you can check either boxes to have individual mails sent (not configured) or to send a mail upon broken builds 
+- Click on "Save".
+
+- Run the project and take a look at your mail address or https://www.mailinator.com/inbox2.jsp?public_to=bootcamp2017-jenkins to see if the step succeeded. 
+
+Probably not because we did not configure our e-mail settings in Jenkins.
+
+- Go back to your Jenkins Dashboard if not already there.
+- Go to the Jenkins configuration 
+- configure the email settings. A good source for this is the gmail SMTP
+- After configuring you can let Jenkins send a test mail. Please do so to test the configuration
+
+
+The following settings can be used
+
+```
+SMTP Server: SMTP.gmail.com
+Use SMTP Auth: Yes
+Username: full gmail address
+password: ************
+Use SSL: Yes
+Port: 465
+```
+
+[Two-factor auth](http://stackoverflow.com/questions/26736062/sending-email-fails-when-two-factor-authentication-is-on-for-gmail) requires a different approach.
+
+Try the job several times working or not working and behold the notifications (spam) coming in.
+
 ***
 
 # Step 5 - Create pipeline with all jobs
@@ -240,7 +289,102 @@ Since we can't actually deploy our test application we have chosen to simulate t
 
 For detailed instruction including images click [here](/docs/Step5.md)
 
-No Content Yet
+In this step we are introducing two topics:
+
+- Build (job) Triggers
+- Chaining Jobs / Projects in a pipeline.
+
+Here we get to the nitty gritty of things. In the past 4 steps we created the separate jobs we use in our Continuous Integration cycle. There's one caveat thought. As a developer or ops you don't have time to start each job whenever you process a commit on your code.
+
+As Jenkins is an Automation tool after all we would like to proces all these job at once, preferably when new code is committed to the repository or in Daily / Nightly builds.
+
+## Build Triggers (or Scheduling)
+
+Build Triggers are important in automation because they initiate the first step in kicking off a chain of jobs or a pipeline.
+
+In jenkins there are three types of triggers:
+
+- Build Trigger -> available in a Job / pipeline to specify when the build step should start
+- Post Build Actions -> Avaliable in a Job only and specifies a follow-up action after build has taken place (see Step4).
+
+# kan iemand dit controleren???
+
+In our bootcamp we will build two triggers:
+
+- Upstream Trigger on Git to start the "Checkout Code" Job
+- Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
+
+__note on terminology: Upstream is when a project / Pipeline executes a separate Project / Pipeline as part of its execution whereas a Downstream trigger is the Executed Project / Pipeline from another Project / Pipeline.__
+
+#graag even nakijken of deze klopt!!
+
+### Upstream Trigger on Git to start the "Checkout Code" Job
+
+In order for the trigger to work we need to reconfigure our "Code Checkout" Job
+
+- Open the "Code Checkout" Job
+- Go to the tab "Build triggers"
+- Select "Poll SCM" and Enter "* * * * *" as Value. This will poll SCM every minute. If you want a different value use another [CRON Expression](https://en.wikipedia.org/wiki/Cron)
+- Click "Save"
+
+A better way to trigger this job is to listen to Git Commits done when Git pushes the Git Command. This Requires the Git Plugin version 1.1.14 and an alteration to your local git. [Use this guide](http://kohsuke.org/2011/12/01/polling-must-die-triggering-jenkins-builds-from-a-git-hook/) to set it up. Use at your own risk!
+
+Try your new trigger by pushing code to the remote repository and see if the "Code Checkout" job starts.
+
+### Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
+
+We will configure this during the construction of our Pipeline.
+
+## Manual Pipeline
+
+Constructing Pipelines in jenkins is done in the Groovy language and stored in a __Jenkinsfile__ which is to be stored in the code repository so it can be used upon code checkout.
+
+A jenkinsfile will follow a set of instructions to configure Stages, Steps, Parameters etc.
+
+The jenkinsfile starts with a __pipeline{}__ command along with the specification of a specific or any agent.
+
+```
+#!groovy
+
+pipeline {
+    agent any
+
+}
+``` 
+Within this syntax follow various __stages{}__ , __stage('name'){}__  and __steps{}__ commands to specify what needs to be done in the pipeline.
+
+We are going to create our first "Manual Pipeline" Pipeline.
+
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter “Manual Pipeline” as the item name and choose "Pipeline"
+- in The Build Triggers tab check "Build after other projects are built" and choose "Code Checkout"
+- in the Pipeline tab under Definition select "Pipeline Script"
+- write code to create a pipeline with the 3 remaining stages (steps) with each one step using the "build job:'name'" command.
+- click "Save"
+
+need help creating pipeline syntax?
+
+either click on pipeline syntax in the configure screen or check this link: http://localhost:8080/job/Manual%20Pipeline/pipeline-syntax/
+
+Push a change to your Remote repo to fire off the "Code Checkout" job which will start the pipeline for the remaining
+
+go to the pipeline and select "Stage view" to get a visual representation of the view.
+
+## Jenkinsfile Pipeline
+
+to further automate the building process specific to the code you want to automate we may want to run different jobs or in a different order.
+
+- The code you have written could be saved in a __"Jenkinsfile"__ and stored along with the rest of the code. an Empty example can be found in the Sourcecode folder.
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter "Jenkinsfile Pipeline” as the item name and choose "Pipeline"
+- to use this script in the pipeline select "pipeline script from SCM" in the pipeline
+- add the git remote repository
+- Select the appropriate branch
+- In path leave the setting to Jenkinsfile to search the root of the repository
+
+If you are having troubles getting your Jenkinsfile working you can point the SCM to "*/step5"
+
+Have a look at that super shiny awesome looking pipeline you just created. yes.... you may pat yourself on the back ^^
 
 ***
 
@@ -250,17 +394,55 @@ No Content Yet
 
 For detailed instruction including images click [here](/docs/Step6.md)
 
-No Content Yet.
+The last chapter we are going to unleash on you is some advanced use of Jenkins. In this course we have created Jobs manually and chained them together using a pipeline. However if you want to become the new Netflix you'll have to do better than that. Netflix designed DSL as a way to automate job creation. a DSL file is also written in the groovy Language and gives you the option to parameterize your jobs and create them on the fly while also chaining them in a "pipeline".
 
-more info on using Job DSL can be found [here](https://jenkinsci.github.io/job-dsl-plugin/)
+There is a lot of debate going on over [DSL vs Pipelines](http://stackoverflow.com/questions/37657810/job-dsl-plugin-vs-pipeline-plugin). because they are very much alike they can cause confusion on the [difference between DSL and Pipeline scripts](https://marcesher.com/2016/08/04/jenkins-as-code-comparing-job-dsl-and-pipelines/). You can check both links to form your own opinion on either or just check the [documentation](https://jenkinsci.github.io/job-dsl-plugin/)
+
+The keen eye may have noticed a dsl.groovy file in the source code repository and we invite you to check it out and take a look at it to see what is happening. If you want even more complex usage on these files ask a question to Wouter van Eekelen as he showed this in the example of his business line.
+
+Furthermore we would like to invite you to read this file into Jenkins and play with it. make changes, commit and experiment.
+
+to read in the file follow these steps:
+
+- Go back to your Jenkins Dashboard if not already there.
+- Go to "New item". Enter "DSL File” as the item name and choose "Freestyle Project"
+- Go to "Source code management" and select "Git". 
+- Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
+- Make sure you use your own username
+- Check that Branch specifies "*/Master"
+- Go to "Build" and select "ADD BUILD STEP". Choose "Proces Job DSLs". 
+- Select "Look on Filesystem" and enter dsl.groovy
+- click "Save"
+- take a look at your current Dashboard
+- Run the job and watch in awe
+- look at your Dashboard after the run
+
+
+# Summary
+
+
+## So to summarize our Bootcamp:
+
+1. __Start using Jenkins__
+2. __?__
+3. __Profit__
+
+So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start using this at our customers or in your personal projects!
+
+If you are interested feel free to fiddle around with Jenkins for the remaining time of the bootcamp or check out the additional resources mentioned below.
+
+# ik had verwacht dat hij met het aftrappen van de DSL ook meteen de pipeline zou starten. Hij heeft alleen maar jobs aangemaakt. Klopt Dit?
+
+# het valt me op dat Jenkins niets lijkt te doen met re-usability van Artifacts etc. Zit dat er in? bijv. één keer een git repo uitchecken en die dan gebruiken in je build stap. Dat dan weer gebruiken in je test etc. Nu gebeuren alle stappen in iedere job overnieuw.
 
 ***
 
-# additional tutorials on Jenkins
+# Additional tutorials on Jenkins
 
 [../Back to ToC](#table-of-contents)
 
 - [Game of Life](https://github.com/tsteenbakkers/game-of-life) (Maven)
+    - [O'reilly - John Ferguson Smart - Jenkins: The definitive Guide](/docs/jenkins-the-definitive-guide.pdf)
 - [Job DSL](https://jenkinsci.github.io/job-dsl-plugin/)
 
 ***
