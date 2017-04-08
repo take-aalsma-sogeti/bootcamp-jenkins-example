@@ -414,7 +414,15 @@ to read in the file follow these steps:
 - Run the job and watch in awe
 - look at your Dashboard after the run
 
-It looks like we created all the jobs and pipeline in one go with just one simple script. Notice how we didnt configure any triggers. These can be scripted in the DSL with the syntax __invullen__
+It looks like we created all the jobs and pipeline in one go with just one simple script. Notice how we didnt configure any triggers. These can ofcourse be scripted in the DSL script like we did in the manual excercise by using the __trigger{}__ syntax:
+
+````
+triggers {
+        scm('H/15 * * * *')
+    }
+````
+
+This configures a polling request every 15 mins.
 
 
 ## Artifacts & Reusability of jobs
@@ -439,7 +447,7 @@ If you are interested feel free to fiddle around with Jenkins for the remaining 
 
 ***
 
-# Additional tutorials on Jenkins
+# Additional tutorials / references on Jenkins
 
 [../Back to ToC](#table-of-contents)
 
