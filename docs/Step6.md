@@ -50,6 +50,28 @@ to read in the file follow these steps:
 
 ![alt text](/docs/images/Step6/Step6-6.png "Logo Title Text 1")
 
+It looks like we created all the jobs and pipeline in one go with just one simple script. Notice how we didnt configure any triggers. These can ofcourse be scripted in the DSL script like we did in the manual excercise by using the __trigger{}__ syntax:
+
+````
+triggers {
+        scm('H/15 * * * *')
+    }
+````
+
+This configures a polling request every 15 mins.
+
+
+## Artifacts
+
+Artifacts are an endresult of a compile / build action like an *.exe / *.jar / *.dacpac etc. If you closesly you will see that the job in step 6 has produced a *.jar artifact in the code:
+
+````
+archiveArtifacts('target/*.jar')
+````
+
+this can be found in the folder __$JENKINS_HOME/jobs/<job>/builds/<build>/archive__
+
+These can ofcourse be used in other steps. How? thats something to find out yourself.
 
 # Summary
 
