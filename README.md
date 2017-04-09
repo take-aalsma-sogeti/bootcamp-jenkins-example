@@ -425,9 +425,7 @@ triggers {
 This configures a polling request every 15 mins.
 
 
-## Artifacts & Reusability of jobs
-
-### Artifacts
+## Artifacts
 
 Artifacts are an endresult of a compile / build action like an *.exe / *.jar / *.dacpac etc. If you closesly you will see that the job in step 6 has produced a *.jar artifact in the code:
 
@@ -437,7 +435,7 @@ archiveArtifacts('target/*.jar')
 
 this can be found in the folder __$JENKINS_HOME/jobs/<job>/builds/<build>/archive__
 
-Komt nog info van Wouter over artifacts en hoe je elementen uit de ene job kunt hergebruiken in een andere job.
+These can ofcourse be used in other steps. How? thats something to find out yourself.
 
 
 # Summary
