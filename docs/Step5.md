@@ -33,9 +33,8 @@ Build Triggers are important in automation because they initiate the first step 
 In jenkins there are three types of triggers:
 
 - Build Trigger -> available in a Job / pipeline to specify when the build step should start
-- Post Build Actions -> Avaliable in a Job only and specifies a follow-up action after build has taken place (see Step5).
-
-# kan iemand dit controleren???
+- Post Build Actions -> Avaliable in a Job only and specifies a follow-up action after build has taken place (see Step4).
+- scheduled trigger -> Available in a Job to specify an interval / schedule which the job should follow.
 
 In our bootcamp we will build two triggers:
 
@@ -43,8 +42,6 @@ In our bootcamp we will build two triggers:
 - Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
 
 __note on terminology: Upstream is when a project / Pipeline executes a separate Project / Pipeline as part of its execution whereas a Downstream trigger is the Executed Project / Pipeline from another Project / Pipeline.__
-
-#graag even nakijken of deze klopt!!
 
 ## Upstream Trigger on Git to start the "Checkout Code" Job
 
