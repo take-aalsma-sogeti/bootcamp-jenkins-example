@@ -207,9 +207,9 @@ Click Close.
 
 [../Back to ToC](#table-of-contents)
 
-Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
+Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/tsteenbakkers/bootcamp-jenkins-example
 - Go to [Github](http://www.github.com) and create a user account.
-- go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
+- go to [the bootcamps repo](https://github.com/tsteenbakkers/bootcamp-jenkins-example)
 - Fork the repository into your own account.
 - clone the repo locally
 
@@ -255,7 +255,7 @@ Enjoy GitHub
 
 ![](/docs/images/Install/gh-4.png "Logo Title Text 1")
 
-go to https://github.com/jeroenschepens/bootcamp-jenkins-example
+go to https://github.com/tsteenbakkers/bootcamp-jenkins-example
 Click "Fork"
 
 ![](/docs/images/Install/gh-5.png "Logo Title Text 1")

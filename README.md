@@ -53,9 +53,9 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 - Java SDK can be downloaded [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## github account
-Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
+Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/tsteenbakkers/bootcamp-jenkins-example
 - Go to [Github](http://www.github.com) and create a user account.
-- go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
+- go to [the bootcamps repo](https://github.com/tsteenbakkers/bootcamp-jenkins-example)
 - Fork the repository into your own account.
 - clone the repo locally
 
@@ -250,7 +250,7 @@ Since we can't actually deploy our test application we have chosen to simulate t
 - Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
 - Make sure you use your own username
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
-- Enter "clean build" in the "Goals" field.
+- Enter "clean compile" in the "Goals" field.
 - go to the "Post-build actions" tab and define an email notification
 - enter your own mail address or "bootcamp2017-jenkins@mailinator.com" into the mail address
 - additionally you can check either boxes to have individual mails sent (not configured) or to send a mail upon broken builds 
@@ -306,8 +306,7 @@ In jenkins there are three types of triggers:
 
 - Build Trigger -> available in a Job / pipeline to specify when the build step should start
 - Post Build Actions -> Avaliable in a Job only and specifies a follow-up action after build has taken place (see Step4).
-
-# kan iemand dit controleren???
+- scheduled trigger -> Available in a Job to specify an interval / schedule which the job should follow.
 
 In our bootcamp we will build two triggers:
 
@@ -315,8 +314,6 @@ In our bootcamp we will build two triggers:
 - Upstream Trigger on our pipeline (built later) to watch when "Checkout Code" has finished
 
 __note on terminology: Upstream is when a project / Pipeline executes a separate Project / Pipeline as part of its execution whereas a Downstream trigger is the Executed Project / Pipeline from another Project / Pipeline.__
-
-#graag even nakijken of deze klopt!!
 
 ### Upstream Trigger on Git to start the "Checkout Code" Job
 
@@ -414,8 +411,33 @@ to read in the file follow these steps:
 - Select "Look on Filesystem" and enter dsl.groovy
 - click "Save"
 - take a look at your current Dashboard
+- run the job and notice it failing for security reasons
+- in manage jenkins go to authorization and approve the groovy script
 - Run the job and watch in awe
 - look at your Dashboard after the run
+
+It looks like we created all the jobs and pipeline in one go with just one simple script. Notice how we didnt configure any triggers. These can ofcourse be scripted in the DSL script like we did in the manual excercise by using the __trigger{}__ syntax:
+
+````
+triggers {
+        scm('H/15 * * * *')
+    }
+````
+
+This configures a polling request every 15 mins.
+
+
+## Artifacts
+
+Artifacts are an endresult of a compile / build action like an *.exe / *.jar / *.dacpac etc. If you closesly you will see that the job in step 6 has produced a *.jar artifact in the code:
+
+````
+archiveArtifacts('target/*.jar')
+````
+
+this can be found in the folder __$JENKINS_HOME/jobs/<job>/builds/<build>/archive__
+
+These can ofcourse be used in other steps. How? thats something to find out yourself.
 
 
 # Summary
@@ -431,13 +453,11 @@ So there you have it. Jenkins in a nutshell. Hopefully you'll be able to start u
 
 If you are interested feel free to fiddle around with Jenkins for the remaining time of the bootcamp or check out the additional resources mentioned below.
 
-# ik had verwacht dat hij met het aftrappen van de DSL ook meteen de pipeline zou starten. Hij heeft alleen maar jobs aangemaakt. Klopt Dit?
 
-# het valt me op dat Jenkins niets lijkt te doen met re-usability van Artifacts etc. Zit dat er in? bijv. één keer een git repo uitchecken en die dan gebruiken in je build stap. Dat dan weer gebruiken in je test etc. Nu gebeuren alle stappen in iedere job overnieuw.
 
 ***
 
-# Additional tutorials on Jenkins
+# Additional tutorials / references on Jenkins
 
 [../Back to ToC](#table-of-contents)
 

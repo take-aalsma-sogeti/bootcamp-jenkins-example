@@ -26,7 +26,7 @@ Ok so below steps are some you have done in the previous three steps so i'll sav
 - Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
 - Make sure you use your own username
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
-- Enter "clean build" in the "Goals" field.
+- Enter "clean compile" in the "Goals" field.
 
 What is new is that we are defining a post-build action. This is a action performed after a build has taken place. This can either be successful or not. 
 
