@@ -53,9 +53,9 @@ Instructions with screens are added in the [Detailed instrcutions](/docs/Install
 - Java SDK can be downloaded [here](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## github account
-Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/jeroenschepens/bootcamp-jenkins-example
+Since this bootcamp uses git it is mandatory to have a github account. If you already have an account you can skip creating one and Fork https://github.com/tsteenbakkers/bootcamp-jenkins-example
 - Go to [Github](http://www.github.com) and create a user account.
-- go to [the bootcamps repo](https://github.com/jeroenschepens/bootcamp-jenkins-example)
+- go to [the bootcamps repo](https://github.com/tsteenbakkers/bootcamp-jenkins-example)
 - Fork the repository into your own account.
 - clone the repo locally
 
@@ -250,7 +250,7 @@ Since we can't actually deploy our test application we have chosen to simulate t
 - Enter https://github.com/__username__/bootcamp-jenkins-example.git in the field "Repository URL".
 - Make sure you use your own username
 - Go to "Build" and select "ADD BUILD STEP". Choose "Invoke top-level Maven targets". Select "M3" in the "Maven Version" dropdown menu.
-- Enter "clean build" in the "Goals" field.
+- Enter "clean compile" in the "Goals" field.
 - go to the "Post-build actions" tab and define an email notification
 - enter your own mail address or "bootcamp2017-jenkins@mailinator.com" into the mail address
 - additionally you can check either boxes to have individual mails sent (not configured) or to send a mail upon broken builds 
@@ -411,6 +411,8 @@ to read in the file follow these steps:
 - Select "Look on Filesystem" and enter dsl.groovy
 - click "Save"
 - take a look at your current Dashboard
+- run the job and notice it failing for security reasons
+- in manage jenkins go to authorization and approve the groovy script
 - Run the job and watch in awe
 - look at your Dashboard after the run
 

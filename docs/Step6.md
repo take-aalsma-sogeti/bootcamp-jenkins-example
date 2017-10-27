@@ -42,6 +42,14 @@ to read in the file follow these steps:
 
 ![alt text](/docs/images/Step6/Step6-4.png "Logo Title Text 1")
 
+- run the job and notice it failing for security reasons
+
+![alt text](/docs/images/Step6/Step6-4a.png "Logo Title Text 1")
+
+- in manage jenkins go to authorization and approve the groovy script
+
+![alt text](/docs/images/Step6/Step6-4b.png "Logo Title Text 1")
+
 - Run the job and watch in awe
 
 ![alt text](/docs/images/Step6/Step6-5.png "Logo Title Text 1")
