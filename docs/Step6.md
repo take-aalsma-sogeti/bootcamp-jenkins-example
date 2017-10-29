@@ -46,7 +46,7 @@ to read in the file follow these steps:
 
 ![alt text](/docs/images/Step6/Step6-4a.png "Logo Title Text 1")
 
-- in manage jenkins go to authorization and approve the groovy script
+- in manage jenkins go to "In Progress Script Approval" and approve the groovy script
 
 ![alt text](/docs/images/Step6/Step6-4b.png "Logo Title Text 1")
 
